@@ -29,7 +29,7 @@
           </ul>
         </div>
       </nav>
-      <a class="page-header__logo">
+      <a class="page-header__logo" href="index.html">
         <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="76" height="84" alt="Седона">
       </a>
       <button class="main-nav__toggle" type="button">открыть меню</button>
@@ -43,8 +43,8 @@
           <!--в бекграунд, с основной картинкой, и добавить контрастный фон-->
         </div>
         <div class="intro__discription">
-          <h2 class="intro__discription1">оставьте свой отзыв</h2>
-          <p class="intro__discription2">помогите нашим отелям стать лучше! оставьте отзыв о них, а так же о посещенных вами достопримечательностях
+          <h2 class="intro__header">оставьте свой отзыв</h2>
+          <p class="intro__text">помогите нашим отелям стать лучше! оставьте отзыв о них, а так же о посещенных вами достопримечательностях
           </p>
         </div>
       </section>
@@ -55,11 +55,11 @@
             <legend class="form__header">представьтесь:</legend>
             <div>
               <label for="name">имя*:</label>
-              <input type="text" id="name" name="name" placeholder="Петр">
+              <input type="text" id="name" name="name" placeholder="Петр" required>
             </div>
             <div>
               <label for="name">фамилия*:</label>
-              <input type="text" id="surname" name="surname" placeholder="Иванов">
+              <input type="text" id="surname" name="surname" placeholder="Иванов" required>
             </div>
             <div>
               <label for="name">отчество:</label>
@@ -70,11 +70,11 @@
             <legend class="form__header">контактная информация:</legend>
             <div>
               <label for="phone">контактный телефон*:</label>
-              <input type="tel" id="phone" name="phone" placeholder="Введите телефон">
+              <input type="tel" id="phone" name="phone" pattern="[0-9]{11}" placeholder="Введите телефон" required>
             </div>
             <div>
               <label for="email">электронная почта*:</label>
-              <input type="email" id="email" name="email" placeholder="Введите e-mail">
+              <input type="email" id="email" name="email" placeholder="Введите e-mail" required>
             </div>
           </fieldset>
           <fieldset class="form__item radio">
