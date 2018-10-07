@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <nav class="main-nav">
+        <div class="main-nav__wrapper">
+          <button class="main-nav__exit" type="button">закрыть меню</button>
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--active">
+              <a href="index.html">главная
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a href="photo.html">фото и видео
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a href="form.html">форма отзыва
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">html academy
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <a class="page-header__logo" href="index.html">
+        <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="76" height="84" alt="Седона">
+      </a>
+      <button class="main-nav__toggle" type="button">открыть меню</button>
+    </header>
+    <main class="page-main">
+      <h1 class="visually-hidden">welcome to the gorgeous Sedona "Because the Grand Canyon sucks!"</h1>
+      <section class="intro">
+        <div class="intro__top">
+          <img class="intro__text-index" src="img/text-sedona.svg" width="282" height="214" alt="intro__text-index">
+          <img class="intro__triangle" src="img/intro__triangle.svg" width="1201" height="57" alt="intro__triangle">
+          <!--в бекграунд, с основной картинкой, и добавить контрастный фон-->
+        </div>
+        <div class="intro__discription">
+          <h2 class="intro__header">оставьте свой отзыв</h2>
+          <p class="intro__text">помогите нашим отелям стать лучше! оставьте отзыв о них, а так же о посещенных вами достопримечательностях
+          </p>
+        </div>
+      </section>
+      <section class="form-section">
+        <h2 class="visually-hidden">форма отзыва</h2>
+        <form action="https://echo.htmlacademy.ru" method="get" name="form" class="form">
+          <fieldset class="form__item name">
+            <legend class="form__header">представьтесь:</legend>
+            <div>
+              <label for="name">имя*:</label>
+              <input type="text" id="name" name="name" placeholder="Петр" required>
+            </div>
+            <div>
+              <label for="name">фамилия*:</label>
+              <input type="text" id="surname" name="surname" placeholder="Иванов" required>
+            </div>
+            <div>
+              <label for="name">отчество:</label>
+              <input type="text" id="fname" name="fname" placeholder="Александрович">
+            </div>
+          </fieldset>
+          <fieldset class="form__item contacts">
+            <legend class="form__header">контактная информация:</legend>
+            <div>
+              <label for="phone">контактный телефон*:</label>
+              <input type="tel" id="phone" name="phone" pattern="[0-9]{11}" placeholder="Введите телефон" required>
+            </div>
+            <div>
+              <label for="email">электронная почта*:</label>
+              <input type="email" id="email" name="email" placeholder="Введите e-mail" required>
+            </div>
+          </fieldset>
+          <fieldset class="form__item radio">
+            <legend class="form__header">ваше общее впечатление:</legend>
+            <ul class="radio__list">
+              <li class="radio__item">
+                <input type="radio" class="visually-hidden radio__input" name="impress" value="impress-positive" id="impress-positive" checked>
+                <label for="impress-positive">Скорее положительное</label>
+              </li>
+              <li class="radio__item">
+                <input type="radio" class="visually-hidden radio__input" name="impress" value="impress-negative" id="impress-negative">
+                <label for="impress-negative">Скорее отрицательное</label>
+              </li>
+              <li class="radio__item">
+                <input type="radio" class="visually-hidden radio__input" name="impress" value="impress-neutral" id="impress-neutral">
+                <label for="impress-neutral">Затрудняюсь ответить</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="form__item checkbox">
+            <legend class="form__header">посещенные достопримечательности:</legend>
+            <ul class="checkbox__list">
+              <li class="checkbox__item">
+                <input type="checkbox" class="visually-hidden checkbox__input" name="bridge" value="bridge" id="bridge" checked>
+                <label for="bridge">Мост Дьявола</label>
+              </li>
+              <li class="checkbox__item">
+                <input type="checkbox" class="visually-hidden checkbox__input" name="mountain" value="mountain" id="mountain" checked>
+                <label for="mountain">Гора-Колокол</label>
+              </li>
+              <li class="checkbox__item">
+                <input type="checkbox" class="visually-hidden checkbox__input" name="park" value="park" id="park" checked>
+                <label for="park">Слайд-парк</label>
+              </li>
+              <li class="checkbox__item">
+                <input type="checkbox" class="visually-hidden checkbox__input" name="rocks" value="rocks" id="rocks">
+                <label for="rocks">Красные скалы</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="form__item text">
+            <legend class="form__header">опишите свои эмоции:</legend>
+            <textarea class="text__input" name="text" rows="3" placeholder="Опишите подробно все свои восторги"></textarea>
+          </fieldset>
+          <button type="submit" name="submit" class="button form__submit">отправить отзыв
+          </button>
+        </form>
+      </section>
+      <footer class="page-footer">
+        <strong class="page-footer__link link">#visitsedona</strong>
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy">
+                <span class="visually-hidden">Мы в Твиттере</span>
+                <img src="img/icon-twitter.svg" height="14" width="18" alt="Твиттер">
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="https://vk.com/htmlacademy">
+                <span class="visually-hidden">Мы в Фейсбуке</span>
+                <img src="img/icon-facebook.svg" height="18" width="9" alt="Фейсбук">
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--youtube" href="https://youtube.com/htmlacademy">
+                <span class="visually-hidden">Мы в Youtube</span>
+                <img src="img/icon-youtube.svg" height="14" width="20" alt="Ютуб">
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+          <strong class="copyright__text">разработано</strong>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <span class="visually-hidden">HTML Academy</span>
+            <img src="img/htmlacademy.svg" height="34" width="27" alt="HTMLAcademy">
+          </a>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>
