@@ -10,11 +10,7 @@
     "gulp": "4.0.x",
     "gulp-plumber": "1.2.x",
     "gulp-postcss": "8.0.x",
-<<<<<<< HEAD
-=======
     "gulp-sass": "4.0.x",
-    "@htmlacademy/editorconfig-cli": "1.x",
->>>>>>> f1d482a2f018c2ddced684b0420f8171e8a4ca75
     "stylelint": "9.6.x",
     "stylelint-config-htmlacademy": "0.1.x"
   },
