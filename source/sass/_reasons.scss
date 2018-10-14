@@ -1,0 +1,35 @@
+.reasons-full {
+  background-color: $theme-color;
+  background-image:  url("../img/bg-triangle.svg");
+  background-repeat: no-repeat;
+  background-size: 320px 37px;
+  background-position: top;
+}
+
+.reasons-full__discription {
+  min-height: 230px;
+}
+
+.reasons-full__header {
+  display: block;
+  margin: 0 auto;
+  padding-top: 80px;
+  @include header;
+  color: $text-white;
+}
+
+.reasons-full__number,
+.reasons-full__text {
+  display: block;
+  margin: 0 auto;
+  @include text;
+  color: $text-white;
+}
+
+.reasons-full__number {
+  padding-top: 15px;
+}
+
+.reasons-full__text {
+  padding-top: 20px;
+}
