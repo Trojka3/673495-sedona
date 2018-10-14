@@ -41,6 +41,7 @@ min-height: 450px;
 
 .reasons-full__image {
   outline: 2px solid green;
+  /*под изображением зазор???*/
 }
 
 .advantages__list {
@@ -87,5 +88,32 @@ min-height: 450px;
   @include text;
   text-align: left;
   margin-top: 20px;
+}
 
-  }
+.reasons-short {
+  list-style: none;
+  @include zero;
+  display: flex;
+  flex-direction: column;
+  background-color: #eeeeee;
+}
+
+.reasons-short__item {
+  @include zero;
+  outline: 1px solid red;
+}
+
+.reasons-short__header {
+  @include header;
+  @include zero;
+}
+
+.reasons-short__number {
+  @include text;   /*текст не двигается в середину*/
+  @include zero;
+}
+
+.reasons-short__text {
+  @include text;
+  @include zero;
+}

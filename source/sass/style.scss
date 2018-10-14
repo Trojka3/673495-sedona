@@ -3,6 +3,7 @@
 @import "main-nav.scss";
 @import "intro.scss";
 @import "reasons.scss";
+@import "hotel-search.scss";
 
 body {
   width: 320px;
@@ -13,7 +14,7 @@ body {
   font-weight: 400;
   font-size: 14px;
   line-height: 26px;
-  font-family: PTSans, Arial, sans-serif;
+  font-family: 'PT Sans', sans-serif;
   color: #000000;
   text-transform: uppercase;
 
