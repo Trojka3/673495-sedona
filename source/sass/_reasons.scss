@@ -1,25 +1,30 @@
-.reasons-full {
-  background-color: $theme-color;
-  background-image:  url("../img/bg-triangle.svg");
-  background-repeat: no-repeat;
-  background-size: 320px 37px;
-  background-position: top;
+.reasons {
+  @include zero;
+  outline: 1px solid black;
+}
+.reasons-full{
+min-height: 450px;
+  outline: 3px solid red;
 }
 
 .reasons-full__discription {
-  min-height: 230px;
+  min-height: 191px;
+  background-color: $theme-color;
+    outline: 3px solid black;
 }
 
 .reasons-full__header {
   display: block;
+  @include zero;
   margin: 0 auto;
-  padding-top: 80px;
+  padding-top: 43px;
   @include header;
   color: $text-white;
 }
 
 .reasons-full__number,
 .reasons-full__text {
+  @include zero;
   display: block;
   margin: 0 auto;
   @include text;
@@ -33,3 +38,54 @@
 .reasons-full__text {
   padding-top: 20px;
 }
+
+.reasons-full__image {
+  outline: 2px solid green;
+}
+
+.advantages__list {
+  display: block;
+  list-style: none;
+  @include zero;
+  margin-bottom: 40px;
+}
+
+.advantages__item {
+  display: flex;
+  flex-direction: column;
+  padding-left: 70px;
+  &--living {
+    background-image: url('../img/icon-house.svg');
+    background-repeat: no-repeat;
+    background-position: 20px 30px;
+    background-size: 40px 35px;
+  }
+  &--souvenirs {
+    background-image: url('../img/icon-gift.svg');
+    background-repeat: no-repeat;
+    background-position: 20px 30px;
+    background-size: 40px 35px;
+  }
+    &--food {
+    background-image: url('../img/icon-burger.svg');
+    background-repeat: no-repeat;
+    background-position: 20px 30px;
+    background-size: 40px 35px;
+  }
+  outline: 1px solid red;
+}
+
+.advantages__title {
+  @include zero;
+  @include header;
+  text-align: left;
+  margin-top: 40px;
+}
+
+.advantages__description {
+  @include zero;
+  @include text;
+  text-align: left;
+  margin-top: 20px;
+
+  }

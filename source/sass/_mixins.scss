@@ -13,3 +13,8 @@
   color: $text-gray;
   text-align: center;
 }
+
+@mixin zero {
+  margin: 0;
+  padding: 0;
+}

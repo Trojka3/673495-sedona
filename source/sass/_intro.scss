@@ -1,3 +1,7 @@
+.intro {
+  display: flex;
+  flex-direction: column;
+}
 .intro__top {
   display: block;
   height: 390px;
@@ -22,4 +26,13 @@
 
 .intro__text {
   @include text;
+}
+
+.intro__bottom {
+  height: 37px;
+  background-color: $theme-color;
+  background-image:  url("../img/bg-triangle.svg");
+  background-repeat: no-repeat;
+  background-size: 320px 37px;
+  background-position: bottom;
 }
