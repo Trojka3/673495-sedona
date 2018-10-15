@@ -3,13 +3,17 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
       <nav class="main-nav">
         <div class="main-nav__wrapper">
-          <button class="main-nav__exit" type="button">закрыть меню</button>
+          <button class="main-nav__exit" type="button">
+            <span class="visually-hidden">закрыть меню</span>
+            <img src="img/icon-cross.svg" height="23" width="23" alt="icon-cross">
+          </button>
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
               <a href="index.html">главная
@@ -30,18 +34,21 @@
           </ul>
         </div>
       </nav>
-      <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="76" height="84" alt="Седона">
-      </a>
-      <button class="main-nav__toggle" type="button">открыть меню</button>
+      <div class="page-header__bottom">
+        <a class="page-header__logo">
+          <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="100" height="110" alt="Седона">
+        </a>
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">открыть меню</span>
+          <img src="img/icon-menu.svg" height="21" width="23" alt="icon-menu">
+        </button>
+      </div>
     </header>
     <main class="page-main">
       <h1 class="visually-hidden">welcome to the gorgeous Sedona "Because the Grand Canyon sucks!"</h1>
       <section class="intro">
         <div class="intro__top">
           <img class="intro__text-index" src="img/text-sedona.svg" width="282" height="214" alt="intro__text-index">
-          <img class="intro__triangle" src="img/intro__triangle.svg" width="1201" height="57" alt="intro__triangle">
-          <!--в бекграунд, с основной картинкой, и добавить контрастный фон-->
         </div>
         <div class="intro__discription">
           <h2 class="intro__header">оставьте свой отзыв</h2>
@@ -55,27 +62,27 @@
           <fieldset class="form__item name">
             <legend class="form__header">представьтесь:</legend>
             <div>
-              <label for="name">имя*:</label>
-              <input type="text" id="name" name="name" placeholder="Петр" required>
+              <label class="form__label" for="name">имя*:</label>
+              <input class="form__placeholder"  type="text" id="name" name="name" placeholder="Петр" required>
             </div>
             <div>
-              <label for="name">фамилия*:</label>
-              <input type="text" id="surname" name="surname" placeholder="Иванов" required>
+              <label class="form__label" for="name">фамилия*:</label>
+              <input class="form__placeholder" type="text" id="surname" name="surname" placeholder="Иванов" required>
             </div>
             <div>
-              <label for="name">отчество:</label>
-              <input type="text" id="fname" name="fname" placeholder="Александрович">
+              <label class="form__label" for="name">отчество:</label>
+              <input class="form__placeholder" type="text" id="fname" name="fname" placeholder="Александрович">
             </div>
           </fieldset>
           <fieldset class="form__item contacts">
             <legend class="form__header">контактная информация:</legend>
             <div>
-              <label for="phone">контактный телефон*:</label>
-              <input type="tel" id="phone" name="phone" pattern="[0-9]{11}" placeholder="Введите телефон" required>
+              <label class="form__label" for="phone">контактный телефон*:</label>
+              <input class="form__placeholder" type="tel" id="phone" name="phone" pattern="[0-9]{11}" placeholder="Введите телефон" required>
             </div>
             <div>
-              <label for="email">электронная почта*:</label>
-              <input type="email" id="email" name="email" placeholder="Введите e-mail" required>
+              <label class="form__label" for="email">электронная почта*:</label>
+              <input class="form__placeholder" type="email" id="email" name="email" placeholder="Введите e-mail" required>
             </div>
           </fieldset>
           <fieldset class="form__item radio">
@@ -83,15 +90,15 @@
             <ul class="radio__list">
               <li class="radio__item">
                 <input type="radio" class="visually-hidden radio__input" name="impress" value="impress-positive" id="impress-positive" checked>
-                <label for="impress-positive">Скорее положительное</label>
+                <label class="form__label--radio" for="impress-positive">Скорее положительное</label>
               </li>
               <li class="radio__item">
                 <input type="radio" class="visually-hidden radio__input" name="impress" value="impress-negative" id="impress-negative">
-                <label for="impress-negative">Скорее отрицательное</label>
+                <label class="form__label--radio" for="impress-negative">Скорее отрицательное</label>
               </li>
               <li class="radio__item">
                 <input type="radio" class="visually-hidden radio__input" name="impress" value="impress-neutral" id="impress-neutral">
-                <label for="impress-neutral">Затрудняюсь ответить</label>
+                <label class="form__label--radio" for="impress-neutral">Затрудняюсь ответить</label>
               </li>
             </ul>
           </fieldset>
@@ -100,25 +107,25 @@
             <ul class="checkbox__list">
               <li class="checkbox__item">
                 <input type="checkbox" class="visually-hidden checkbox__input" name="bridge" value="bridge" id="bridge" checked>
-                <label for="bridge">Мост Дьявола</label>
+                <label class="form__label" for="bridge">Мост Дьявола</label>
               </li>
               <li class="checkbox__item">
                 <input type="checkbox" class="visually-hidden checkbox__input" name="mountain" value="mountain" id="mountain" checked>
-                <label for="mountain">Гора-Колокол</label>
+                <label class="form__label--checkbox" for="mountain">Гора-Колокол</label>
               </li>
               <li class="checkbox__item">
                 <input type="checkbox" class="visually-hidden checkbox__input" name="park" value="park" id="park" checked>
-                <label for="park">Слайд-парк</label>
+                <label class="form__label--checkbox" for="park">Слайд-парк</label>
               </li>
               <li class="checkbox__item">
                 <input type="checkbox" class="visually-hidden checkbox__input" name="rocks" value="rocks" id="rocks">
-                <label for="rocks">Красные скалы</label>
+                <label class="form__label--checkbox" for="rocks">Красные скалы</label>
               </li>
             </ul>
           </fieldset>
           <fieldset class="form__item text">
             <legend class="form__header">опишите свои эмоции:</legend>
-            <textarea class="text__input" name="text" rows="3" placeholder="Опишите подробно все свои восторги"></textarea>
+            <textarea class="form__placeholder"  name="text" rows="3" placeholder="Опишите подробно все свои восторги"></textarea>
           </fieldset>
           <button type="submit" name="submit" class="button form__submit">отправить отзыв
           </button>

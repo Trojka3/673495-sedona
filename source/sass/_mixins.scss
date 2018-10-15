@@ -14,6 +14,13 @@
   text-align: center;
 }
 
+@mixin photo {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 24px;
+  color: $text-default;  
+}
+
 @mixin zero {
   margin: 0;
   padding: 0;

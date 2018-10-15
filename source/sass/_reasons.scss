@@ -1,16 +1,14 @@
 .reasons {
   @include zero;
-  outline: 1px solid black;
 }
-.reasons-full{
-min-height: 450px;
-  outline: 3px solid red;
+
+.reasons-full {
+  min-height: 450px;
 }
 
 .reasons-full__discription {
   min-height: 191px;
   background-color: $theme-color;
-    outline: 3px solid black;
 }
 
 .reasons-full__header {
@@ -40,8 +38,7 @@ min-height: 450px;
 }
 
 .reasons-full__image {
-  outline: 2px solid green;
-  /*под изображением зазор???*/
+  display: block;
 }
 
 .advantages__list {
@@ -73,7 +70,6 @@ min-height: 450px;
     background-position: 20px 30px;
     background-size: 40px 35px;
   }
-  outline: 1px solid red;
 }
 
 .advantages__title {
@@ -99,21 +95,51 @@ min-height: 450px;
 }
 
 .reasons-short__item {
+  position: relative;
   @include zero;
-  outline: 1px solid red;
+  &:not(:last-child)::after {
+    content:"";
+    position: absolute;
+    width: 280px;
+    height: 1px;
+    left: 20px;
+    background-color: #e3e3e3;
+  }
 }
 
 .reasons-short__header {
-  @include header;
   @include zero;
+  @include header;
+  margin-top: 30px;
+  margin-bottom: 20px;
 }
 
 .reasons-short__number {
-  @include text;   /*текст не двигается в середину*/
+display: block;
   @include zero;
+  @include text;
+  margin-bottom: 20px;
 }
 
 .reasons-short__text {
-  @include text;
   @include zero;
+  @include text;
+  margin-bottom: 30px;
+}
+
+.map {
+  display: flex;
+  width: 320px;
+  min-height: 350px;
+  margin-bottom: 40px;
+  border: none;
+  background-color: #e9e5dc;
+  background-image: url("../img/icon-map-marker.svg"), url("../img/bg-map-mobile@1x.jpg");
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center, center 0;
+}
+
+.map__link {
+border: none;
 }

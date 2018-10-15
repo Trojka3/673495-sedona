@@ -16,7 +16,6 @@ display: block;
 .site-list {
   display: flex;
   flex-direction: column;
-
 }
 
 .site-list__item {
@@ -61,3 +60,23 @@ display: block;
     box-shadow: inset 0 -5px 5px 0 rgba(129, 129, 129, 0.2);
   }
 }
+
+.page-header__bottom {
+  position: relative;
+  min-height: 56px;
+}
+
+.page-header__logo{
+  display: block;
+  position: absolute;
+  left: 50%;
+  margin-left: -50px;
+  margin-top: -13px;
+}
+
+.main-nav__toggle {
+  position: absolute;
+  bottom: 18px;
+  right: 20px;
+}
+

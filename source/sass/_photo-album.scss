@@ -1,0 +1,12 @@
+.album__header,
+.album__like {
+  @include zero;
+  @include photo;
+}
+
+.album__autor {
+  @include zero;
+  @include photo; 
+  font-weight: regular;
+  color: $text-gray;
+}

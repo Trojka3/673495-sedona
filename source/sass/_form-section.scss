@@ -1,0 +1,34 @@
+.form__header {
+	@include zero;
+	@include header;
+}
+
+.form__label {
+	@include zero;
+	@include text;
+	text-transform: uppercase;
+	line-height: 26px;	
+}
+
+.form__placeolder,
+.form__label--radio,
+.form__label--checkbox {
+	@include zero;
+	@include header;
+	text-transform: capitalize;
+}
+
+.form__submit {
+  display: block;
+  width: 280px;
+  min-height: 58px;
+  @include zero;
+  margin: 0 auto;
+  background-color: $theme-color;
+  @include header;
+  text-size: 21px;
+  color: $text-white;
+  padding-top: 17px;
+  margin-top: 40px;
+  /*надо уточнить*/
+}
