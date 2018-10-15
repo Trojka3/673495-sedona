@@ -20,12 +20,23 @@
   margin: 0 auto;
 }
 
+.intro__discription {
+  width: 275px;
+  margin: 0 auto;
+  @include out;  /*margin-bottom на всех страницах разный!*/
+  margin-top: 40px;
+}
+
 .intro__header {
+  @include zero;
   @include header;
+  margin-bottom: 30px;
 }
 
 .intro__text {
+  @include zero;
   @include text;
+  line-height: 26px;
 }
 
 .intro__bottom {
