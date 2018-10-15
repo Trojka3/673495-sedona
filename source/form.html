@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
+    <title>Седона: Форма отзыва</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -61,28 +61,26 @@
         <form action="https://echo.htmlacademy.ru" method="get" name="form" class="form">
           <fieldset class="form__item name">
             <legend class="form__header">представьтесь:</legend>
-            <div>
+            <div class="name__unit">
               <label class="form__label" for="name">имя*:</label>
-              <input class="form__placeholder"  type="text" id="name" name="name" placeholder="Петр" required>
+              <input class="form__placeholder form__placeholder--name"  type="text" id="name" name="name" placeholder="Петр" required>
             </div>
-            <div>
+            <div class="name__unit">
               <label class="form__label" for="name">фамилия*:</label>
-              <input class="form__placeholder" type="text" id="surname" name="surname" placeholder="Иванов" required>
+              <input class="form__placeholder form__placeholder--surname" type="text" id="surname" name="surname" placeholder="Иванов" required>
             </div>
-            <div>
+            <div class="name__unit">
               <label class="form__label" for="name">отчество:</label>
-              <input class="form__placeholder" type="text" id="fname" name="fname" placeholder="Александрович">
+              <input class="form__placeholder form__placeholder--fname" type="text" id="fname" name="fname" placeholder="Александрович">
             </div>
           </fieldset>
           <fieldset class="form__item contacts">
             <legend class="form__header">контактная информация:</legend>
-            <div>
-              <label class="form__label" for="phone">контактный телефон*:</label>
-              <input class="form__placeholder" type="tel" id="phone" name="phone" pattern="[0-9]{11}" placeholder="Введите телефон" required>
-            </div>
-            <div>
-              <label class="form__label" for="email">электронная почта*:</label>
-              <input class="form__placeholder" type="email" id="email" name="email" placeholder="Введите e-mail" required>
+            <div class="form__contacts">
+              <label class="form__label--phone" for="phone">контактный телефон*:</label>
+              <input class="form__placeholder form__placeholder--phone" type="tel" id="phone" name="phone" pattern="[0-9]{11}" placeholder="Введите телефон" required>
+              <label class="form__label--email" for="email">электронная почта*:</label>
+              <input class="form__placeholder form__placeholder--email" type="email" id="email" name="email" placeholder="Введите e-mail" required>
             </div>
           </fieldset>
           <fieldset class="form__item radio">
@@ -107,7 +105,7 @@
             <ul class="checkbox__list">
               <li class="checkbox__item">
                 <input type="checkbox" class="visually-hidden checkbox__input" name="bridge" value="bridge" id="bridge" checked>
-                <label class="form__label" for="bridge">Мост Дьявола</label>
+                <label class="form__label--checkbox" for="bridge">Мост Дьявола</label>
               </li>
               <li class="checkbox__item">
                 <input type="checkbox" class="visually-hidden checkbox__input" name="mountain" value="mountain" id="mountain" checked>
@@ -125,7 +123,7 @@
           </fieldset>
           <fieldset class="form__item text">
             <legend class="form__header">опишите свои эмоции:</legend>
-            <textarea class="form__placeholder"  name="text" rows="3" placeholder="Опишите подробно все свои восторги"></textarea>
+            <textarea class="form__placeholder form__placeholder--text"  name="text" rows="3" placeholder="Опишите подробно все свои восторги"></textarea>
           </fieldset>
           <button type="submit" name="submit" class="button form__submit">отправить отзыв
           </button>

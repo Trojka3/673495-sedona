@@ -18,7 +18,8 @@
   margin-top: 30px;
   width: 300px;
 }
-.hotel-search__button {
+
+.button {
   display: block;
   width: 280px;
   min-height: 58px;
@@ -28,7 +29,11 @@
   @include header;
   text-size: 21px;
   color: $text-white;
-  padding-top: 17px;
-  margin-top: 40px;
+  text-transform: uppercase;
+  border: none;
 }
 
+.hotel-search__button {
+  margin-top: 40px;
+  padding-top:15px;
+}
