@@ -32,21 +32,9 @@ body {
   height: 1px;
   margin: -1px;
 }
+
 a {
-  position: relative;
-
-  text-decoration: none;
-
-  outline: none;
-}
-
-a::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-
   display: block;
+  position: relative;
+  text-decoration: none;
 }
