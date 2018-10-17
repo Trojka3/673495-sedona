@@ -1,0 +1,48 @@
+.album {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.album__list {
+  list-style: none;
+  @include zero;
+}
+
+.album__item {
+  @include zero;
+  padding-top: 23px;
+  margin-bottom: 10px;
+}
+
+.album__image {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.album__header {
+  @include zero;
+  @include photo;
+  margin-bottom: 5px;
+}
+
+.album__autor {
+  @include zero;
+  @include photo;
+  font-weight: normal;
+  color: $text-gray;
+  text-transform: none;
+  margin-bottom: 10px;
+}
+
+.album__like {
+  display: block;
+  min-height: 30px;
+  @include zero;
+  @include photo;
+  padding-left: 35px;
+
+  background-image: url('../img/icon-like.svg');
+  background-repeat: no-repeat;
+  background-position: 0 -2px;
+  background-size: 22px 22px;
+}

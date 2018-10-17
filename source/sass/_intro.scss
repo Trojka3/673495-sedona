@@ -1,0 +1,49 @@
+.intro {
+  display: flex;
+  flex-direction: column;
+}
+.intro__top {
+  display: block;
+  height: 390px;
+  box-sizing: border-box;
+  padding-top: 90px;
+  background-color: rgb(130, 90, 90);
+  background-image:  url("../img/bg-intro-triangle-mobile.svg"), url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-size: 320px 160px,768px 389px;
+  background-position:center 297px, top;
+  /*треугольник не ставится bottomом вниз? */
+}
+
+.intro__text-index {
+  display: block;
+  margin: 0 auto;
+}
+
+.intro__discription {
+  width: 275px;
+  margin: 0 auto;
+  @include out;  /*margin-bottom на всех страницах разный!*/
+  margin-top: 40px;
+}
+
+.intro__header {
+  @include zero;
+  @include header;
+  margin-bottom: 30px;
+}
+
+.intro__text {
+  @include zero;
+  @include text;
+  line-height: 26px;
+}
+
+.intro__bottom {
+  height: 37px;
+  background-color: $theme-color;
+  background-image:  url("../img/bg-triangle.svg");
+  background-repeat: no-repeat;
+  background-size: 320px 37px;
+  background-position: bottom;
+}

@@ -1,0 +1,40 @@
+@import "var.scss";
+@import "mixins.scss";
+@import "main-nav.scss";
+@import "intro.scss";
+@import "reasons.scss";
+@import "hotel-search.scss";
+@import "form-section.scss";
+@import "photo-album.scss";
+@import "page-footer.scss";
+@import "video.scss";
+
+body {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  font-family: 'PT Sans', sans-serif;
+  color: #000000;
+  text-transform: uppercase;
+
+  background: rgb(255, 255, 255);
+
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+a {
+  display: block;
+  position: relative;
+  text-decoration: none;
+}

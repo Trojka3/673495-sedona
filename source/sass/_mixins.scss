@@ -1,0 +1,32 @@
+@mixin header {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 26px;
+  color: $text-default;
+  text-align: center;
+}
+
+@mixin text {
+  font-size: 14px;
+  font-weight: regular;
+  line-height: 21px;
+  color: $text-gray;
+  text-align: center;
+}
+
+@mixin photo {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 24px;
+  color: $text-default;
+}
+
+@mixin zero {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin out{
+  outline: 1px solid red;
+}
+/*времено, для разметки*/

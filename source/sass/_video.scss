@@ -1,0 +1,32 @@
+.video {
+  margin-bottom: 75px;
+}
+
+.video__discription {
+  @include zero;
+  width: 280px;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 35px;
+}
+
+.video__header {
+  @include zero;
+  @include header;
+  margin-bottom: 30px;
+}
+
+.video__text {
+  @include zero;
+  @include text;
+}
+
+.video__pic {
+  display: block;
+}
+.video__bar {
+  height: 65px;
+  width: 280px;
+  background-color: #f2f2f2;
+  margin: 0 auto;
+}
