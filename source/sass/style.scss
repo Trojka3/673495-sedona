@@ -34,7 +34,10 @@ body {
 }
 
 a {
-  display: block;
   position: relative;
   text-decoration: none;
+}
+
+.block {
+  display: block;
 }

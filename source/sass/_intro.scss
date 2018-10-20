@@ -23,8 +23,17 @@
 .intro__discription {
   width: 275px;
   margin: 0 auto;
-  @include out;  /*margin-bottom на всех страницах разный!*/
-  margin-top: 40px;
+  padding-top: 40px;
+
+  &--index {
+  margin-bottom: 10px;
+  }
+  &--form {
+  margin-bottom: 20px;
+  }
+  &--photo {
+  margin-bottom: 30px;
+  }
 }
 
 .intro__header {
