@@ -92,7 +92,7 @@
   right: 20px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .main-nav {
     width: $tablet-width;
     margin: 0 auto;
@@ -182,7 +182,7 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: $desktop-width) {
   .main-nav {
     width: $desktop-width;
   }
