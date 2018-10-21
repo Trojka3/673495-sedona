@@ -32,6 +32,8 @@
 }
 .intro__imgtext-other {
   display: block;
+  height: 40px;
+  width: 230px;
   padding-top: 35px;
   margin: 0 auto;
 }
@@ -82,7 +84,11 @@
     height: 518px;
     background-image:  url("../img/bg-intro-triangle-tablet.svg"), url("../img/bg-back-tablet@1x.jpg");
     background-size: 768px 57px,768px 518px;
-    background-position:center bottom, center;
+    background-position:center bottom, bottom;
+
+    &--small {
+      height: 290px;
+    }
   }
 
   .intro__imgtext-index {
@@ -94,17 +100,20 @@
   .intro__discription {
 
     &--index {
-    width: 500px;
-    padding-top: 50px;
-    margin-bottom: 55px;
+      width: 500px;
+      padding-top: 50px;
+      margin-bottom: 55px;
     }
 
-    &--photo {
-    padding-top: 70px;
-    }
-
+    &--photo,
     &--form {
-    padding-top: 70px;
+      width: 450px;
+      padding-top: 70px;
+      margin-bottom: 50px;
+
+      .intro__header {
+        font-size: 30px;
+      }
     }
   }
 
@@ -115,6 +124,12 @@
 
   .intro__bottom {
     display: none;
+  }
+
+  .intro__imgtext-other {
+    height: 80px;
+    width: 460px;
+    padding-top: 95px;
   }
 }
 
@@ -127,6 +142,26 @@
     height: 518px;
     background-image:  url("../img/bg-intro-triangle-desktop.svg"), url("../img/bg-back-desktop@1x.jpg");
     background-size: 1200px 57px, 1200px 518px;
-    background-position:center bottom, center;
+    background-position:center bottom, bottom;
+
+    &--small {
+      height: 300px;
+    }
+  }
+
+  .intro__imgtext-other {
+    padding-top: 100px;
+  }
+
+  .intro__discription {
+    &--photo,
+    &--form {
+    padding-top: 110px;
+    }
+  }
+
+  .intro__header {
+    margin-bottom: 35px;
+    @include header-t;
   }
 }
