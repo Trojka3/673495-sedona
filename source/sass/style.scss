@@ -1,16 +1,8 @@
 @import "var.scss";
 @import "mixins.scss";
-@import "main-nav.scss";
-@import "intro.scss";
-@import "reasons.scss";
-@import "hotel-search.scss";
-@import "form-section.scss";
-@import "photo-album.scss";
-@import "page-footer.scss";
-@import "video.scss";
 
 body {
-  width: 320px;
+  min-width: 320px;
   margin: 0 auto;
   padding: 0;
 
@@ -34,7 +26,20 @@ body {
 }
 
 a {
-  display: block;
   position: relative;
   text-decoration: none;
 }
+
+.block {
+  display: block;
+}
+
+@import "page-header.scss";
+@import "intro.scss";
+@import "reasons.scss";
+@import "hotel-search.scss";
+@import "map.scss";
+@import "form-section.scss";
+@import "album.scss";
+@import "page-footer.scss";
+@import "video.scss";
