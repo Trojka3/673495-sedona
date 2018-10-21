@@ -1,5 +1,8 @@
+@import "var.scss";
+@import "mixins.scss";
+
 body {
-  width: 320px;
+  min-width: 320px;
   margin: 0 auto;
   padding: 0;
 
@@ -31,8 +34,6 @@ a {
   display: block;
 }
 
-@import "var.scss";
-@import "mixins.scss";
 @import "page-header.scss";
 @import "intro.scss";
 @import "reasons.scss";

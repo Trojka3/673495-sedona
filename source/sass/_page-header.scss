@@ -1,6 +1,8 @@
 .main-nav {
   display: block;
   position: relative;
+  width: 320px;
+  margin: 0 auto;
 }
 
 .main-nav__exit {
@@ -16,13 +18,13 @@
 .site-list {
   display: flex;
   flex-direction: column;
+
+  background-color: $theme-color;
 }
 
 .site-list__item {
   width: 320px;
   min-height: 56px;
-
-  background-color: $theme-color;
 
   &:hover {
     background-color: $color-hover;
@@ -67,19 +69,135 @@
 
 .page-header__bottom {
   position: relative;
-  min-height: 56px;
+  width: 320px;
+  height: 56px;
+  margin: 0 auto;
 }
 
-.page-header__logo{
+.page-header__logo {
   display: block;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  margin-top: -13px;
+
+  &--tablet,
+  &--desktop {
+    display: none;
+  }
 }
 
 .main-nav__toggle {
   position: absolute;
   bottom: 18px;
   right: 20px;
+}
+
+@media (min-width: 768px) {
+  .main-nav {
+    width: $tablet-width;
+    margin: 0 auto;
+  }
+
+  .site-list {
+    @include zero;
+    display: flex;
+    flex-direction: row;
+    background-color: $color-none;
+  }
+
+  .site-list__item {
+    width: 153px;
+    &:nth-child(3) {
+    margin-left: auto;
+    }
+
+    &:nth-child(n) {
+      border: none;
+    }
+
+    &:last-child {
+      box-shadow: none;
+    }
+
+    a {
+      color: $text-default;
+      font-size: 14px;
+      line-height: 26px;
+    }
+
+    &:hover {
+      background-color: $color-none;
+
+      a {
+        color: $theme-color;
+      }
+    }
+
+    &:active {
+      background-color: $color-none;
+
+      a{
+        color: rgba(0, 0, 0, 0.3);
+      }
+    }
+
+    &--active {
+      a {
+        color: $text-active;
+      }
+
+      &:hover {
+        a {
+          color: $text-active-h;
+        }
+      }
+
+      &:active {
+        a {
+          opacity: 0.3;
+        }
+      }
+    }
+  }
+
+  .main-nav__exit,
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .page-header__bottom {
+    height: 0;
+  }
+
+  .page-header__logo {
+    margin-top: -58px;
+
+    &--mobile {
+      display: none;
+    }
+
+    &--tablet {
+      display: block;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .main-nav {
+    width: $desktop-width;
+  }
+
+  .site-list__item {
+    width: 240px;
+  }
+
+  .page-header__logo {
+    &--tablet {
+      display: none;
+    }
+
+    &--desktop {
+      display: block;
+    }
+  }
 }
