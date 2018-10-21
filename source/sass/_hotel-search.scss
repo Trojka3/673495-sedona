@@ -34,6 +34,8 @@
 }
 
 .hotel-search__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: 40px;
-  padding-top:15px;
 }
