@@ -1,5 +1,6 @@
 .map {
   display: flex;
+  margin: 0 auto;
   width: 320px;
   min-height: 350px;
   border: none;
@@ -11,5 +12,41 @@
 }
 
 .map__link {
-border: none;
+  border: none;
+}
+
+.map__link--tablet,
+.map__link--desktop {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .map {
+    width: $tablet-width;
+    background-image: url("../img/icon-map-marker.svg"), url("../img/bg-map-tablet@1x.jpg");
+  }
+
+  .map__link--mobile,
+  .map__link--desktop {
+    display: none;
+  }
+  .map__link--tablet {
+    display: block;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .map {
+    width: $desktop-width;
+    background-image: url("../img/icon-map-marker.svg"), url("../img/bg-map-desktop@1x.jpg");
+  }
+
+  .map__link--mobile,
+  .map__link--tablet {
+    display: none;
+  }
+
+  .map__link--desktop {
+    display: block;
+  }
 }
