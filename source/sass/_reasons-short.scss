@@ -70,6 +70,7 @@
 
   .reasons-short__header {
     width: 120px;
+    @include header-t;
   }
   .reasons-short__item:first-child  {
     .reasons-short__text {
