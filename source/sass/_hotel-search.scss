@@ -1,21 +1,21 @@
 .hotel-search {
-  display: flex;
-  flex-direction: column;
+  @include wrapper-column;
+  margin-top: 30px;
   margin-bottom: 50px;
 }
 
 .hotel-search__header {
   @include header;
   @include zero;
-  font-size: 21px;
-  margin-top: 30px;
+  @include header-t;
+  margin-bottom: 30px;
 }
 
 .hotel-search__text {
   @include text;
   @include zero;
   line-height: 24px;
-  margin-top: 30px;
+  margin-bottom: 40px;
   width: 300px;
 }
 
@@ -27,7 +27,7 @@
   margin: 0 auto;
   background-color: $theme-color;
   @include header;
-  text-size: 21px;
+  font-size: 21px;
   color: $text-white;
   text-transform: uppercase;
   border: none;
@@ -37,5 +37,37 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 40px;
+}
+
+.hotel-search__br-t {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .hotel-search {
+    margin-top: 55px;
+    margin-bottom: 58px;
+
+    &__header {
+      font-size: 30px;
+      margin-bottom: 35px;
+    }
+
+    &__text {
+      width: 430px;
+      margin-botom: 45px;
+    }
+
+    &__button {
+      width: 458px;
+    }
+
+    &__br-m {
+      display: none;
+    }
+
+    &__br-t {
+      display: inline;
+    }
+  }
 }
