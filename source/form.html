@@ -82,11 +82,16 @@
           </fieldset>
           <fieldset class="form__item contacts">
             <legend class="form__header">контактная информация:</legend>
-            <div class="form__contacts">
-              <label class="form__label--phone" for="phone">контактный телефон*:</label>
-              <input class="form__placeholder form__placeholder--phone" type="tel" id="phone" name="phone" pattern="[0-9]{11}" placeholder="Введите телефон" required>
-              <label class="form__label--email" for="email">электронная почта*:</label>
-              <input class="form__placeholder form__placeholder--email" type="email" id="email" name="email" placeholder="Введите e-mail" required>
+            <div class="form__contacts contacts">
+              <div class="contacts__item">
+                <label class="form__label--phone phone" for="phone">контактный телефон*:</label>
+                <label class="form__label--phone phone--desktop" for="phone">телефон*:</label>
+                <input class="form__placeholder form__placeholder--phone" type="tel" id="phone" name="phone" pattern="[0-9]{11}" placeholder="Введите телефон" required>
+              </div>
+              <div class="contacts__item">
+                <label class="form__label--email" for="email">электронная почта*:</label>
+                <input class="form__placeholder form__placeholder--email" type="email" id="email" name="email" placeholder="Введите e-mail" required>
+              </div>
             </div>
           </fieldset>
           <fieldset class="form__item radio">
