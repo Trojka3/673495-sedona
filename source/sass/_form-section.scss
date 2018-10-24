@@ -186,7 +186,6 @@
     width: 648px;
     margin-top: 0;
     margin-bottom: 50px;
-    @include out;
     &::before {
       display: none;
     }
@@ -208,7 +207,6 @@
     margin-bottom: 20px;
     display: flex;
     flex-wrap: wrap;
-
     }
 
     &__item {
