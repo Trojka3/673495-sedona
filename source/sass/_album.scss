@@ -52,7 +52,6 @@
   @include zero;
   @include photo;
   padding-left: 35px;
-
   background-image: url('../img/icon-like.svg');
   background-repeat: no-repeat;
   background-position: 0 -2px;
@@ -99,8 +98,8 @@
       background-color: #f2f2f2;
     }
 
-    &__ha {
-      padding-right: 20px;
+    &__h-a {
+      padding-left: 20px;
     }
 
     &__header {
@@ -109,6 +108,49 @@
     }
     &__autor {
     margin: 0;
+    }
+    &__like {
+      padding-right: 30px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .album {
+    width: $desktop-width;
+
+    &__wrapper {
+      width: 1200px;
+    }
+
+    &__item {
+      width: 400px;
+      position: relative;
+      &:first-child {
+        width: 1200px;
+      }
+    }
+
+    &__image {
+      &--desktop {
+        display: block;
+      }
+      &--tablet {
+        display: none;
+      }
+    }
+
+    &__discription {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    &__header,
+    &__autor,
+    &__like {
+      color: $text-white;
     }
   }
 }
