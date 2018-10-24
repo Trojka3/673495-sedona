@@ -62,9 +62,9 @@
           </p>
         </div>
       </section>
-      <section class="form-section">
+      <section class="form">
         <h2 class="visually-hidden">форма отзыва</h2>
-        <form action="https://echo.htmlacademy.ru" method="get" name="form" class="form">
+        <form class="form__list" action="https://echo.htmlacademy.ru" method="get" name="form" class="form">
           <fieldset class="form__item name">
             <legend class="form__header">представьтесь:</legend>
             <div class="name__unit">
@@ -131,8 +131,12 @@
             <legend class="form__header">опишите свои эмоции:</legend>
             <textarea class="form__placeholder form__placeholder--text"  name="text" rows="3" placeholder="Опишите подробно все свои восторги"></textarea>
           </fieldset>
-          <button type="submit" name="submit" class="button form__submit">отправить отзыв
-          </button>
+          <div class="form__button">
+            <button type="submit" name="submit" class="button form__submit">отправить отзыв
+            </button>
+            <span class="form__comment">* — обязательные поля
+            </span>
+          </div>
         </form>
       </section>
       <footer class="page-footer">

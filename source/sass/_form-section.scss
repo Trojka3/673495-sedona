@@ -1,18 +1,36 @@
-.form-section {
+.form {
   width: 280px;
   margin: 0 auto;
   margin-bottom: 70px;
+}
+.form__list {
+  display: flex;
+  flex-direction: column;
 }
 
 .form__item {
   position: relative;
   border: none;
   @include zero;
-  margin-bottom: 5px;
+  margin-top: 20px;
+  margin-bottom: 25px;
+
+  &::before {
+    content:"";
+    position: absolute;
+    width: 320px;
+    height: 1px;
+    left: -20px;
+    top: -20px;
+    background-color: #e5e5e5;
+  }
 }
+
 .form__header {
+  display: block;
 	@include zero;
 	@include header;
+  margin: 0 auto;
   margin-bottom: 25px;
 }
 
@@ -92,6 +110,7 @@
 
 .checkbox__list {
   list-style: none;
+  @include zero;
 }
 
 .form__contacts::before {
@@ -129,4 +148,125 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 20px;
+}
+
+.radio__list {
+  list-style: none;
+  @include zero;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 75px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  min-height: 165px;
+}
+.radio__item {
+}
+.form__comment {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .form {
+    width: 648px;
+    margin-bottom: 60px;
+  }
+
+  .form__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .form__item {
+    width: 648px;
+    margin-top: 0;
+    margin-bottom: 50px;
+    @include out;
+    &::before {
+      display: none;
+    }
+  }
+
+  .form__item:nth-child(1) {
+    width: 270px;
+    margin-left: 54px;
+  }
+  .checkbox {
+    &__list {
+    margin-left: 96px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+
+    }
+
+    &__item {
+      display: flex;
+      align-items: center;
+      min-height: 56px;
+      box-sizing: border-box;
+      width: 240px;
+      padding-left: 80px;
+    }
+  }
+
+    .form__header { /* ка сместить влево???*/
+
+    }
+  .form__placeholder {
+    &--name {
+      width: 216px;
+      margin-left: auto;
+    }
+
+    &--surname {
+      width: 178px;
+    }
+
+    &--fname {
+      width: 180px;
+    }
+
+    &--phone {
+      width: 648px;
+      margin-bottom: 25px;
+    }
+
+    &--email {
+      width: 648px;
+    }
+
+    &--text {
+      width: 648px;
+    }
+  }
+
+  .form__item:nth-child(3) {
+    width: 324px;
+    order: -1;
+  }
+  .form__header {
+    @include header-t;
+  }
+  .radio__list {
+  padding-top: 50px;
+  min-height: 180px;
+}
+  .form__button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 8px;
+    width: 648px;
+  }
+
+  .form__submit {
+    margin: 0;
+  }
+
+  .form__comment {
+    display: block;
+    @include text;
+  }
 }
