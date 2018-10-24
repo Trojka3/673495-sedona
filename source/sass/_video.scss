@@ -92,7 +92,17 @@
 @media (min-width: $tablet-width) {
   .video {
     width: $tablet-width;
+    margin-top: 65px;
     margin-bottom: 40px;
+  }
+
+  .video__discription {
+    width: 500px;
+    margin-bottom: 75px;
+  }
+
+  .video__header {
+    font-size: 30px;
   }
 
   .video__pic {
@@ -150,6 +160,10 @@
   .video {
     width: $desktop-width;
     margin-bottom: 86px;
+  }
+
+  .video__discription {
+    width: 480px;
   }
 
   .video__pic {
