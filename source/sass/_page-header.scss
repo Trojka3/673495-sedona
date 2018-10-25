@@ -7,6 +7,12 @@
 
 .main-nav__exit {
   position: absolute;
+  top: 17px;
+  right: 20px;
+  cursor: pointer;
+  border: 0;
+  background: none;
+  z-index: 3;
 }
 
 .main-nav__list {
@@ -90,6 +96,10 @@
   position: absolute;
   bottom: 18px;
   right: 20px;
+
+  cursor: pointer;
+  border: 0;
+  background: none;
 }
 
 @media (min-width: $tablet-width) {
