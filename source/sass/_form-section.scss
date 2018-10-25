@@ -277,6 +277,10 @@
   }
 }
 
+.form__label--radio {
+  cursor: pointer;
+}
+
 @media (min-width: $desktop-width) {
   .form {
     width: 960px;

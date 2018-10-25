@@ -32,16 +32,13 @@
   width: 320px;
   min-height: 56px;
 
-  &:hover {
+  a[href]:hover {
     background-color: $color-hover;
   }
 
-  &:active {
+  a[href]:active {
     background-color: $color-active;
-
-    a {
-      color: rgba(255, 255, 255, 0.3);
-    }
+    color: rgba(255, 255, 255, 0.3);
   }
 
   a {
@@ -135,37 +132,28 @@
       line-height: 26px;
     }
 
-    &:hover {
+    a[href]:hover {
       background-color: $color-none;
-
-      a {
-        color: $theme-color;
-      }
+      color: $theme-color;
     }
 
-    &:active {
+    a[href]:active {
       background-color: $color-none;
-
-      a{
-        color: rgba(0, 0, 0, 0.3);
-      }
+      color: rgba(0, 0, 0, 0.3);
     }
 
     &--active {
+
       a {
         color: $text-active;
       }
 
-      &:hover {
-        a {
-          color: $text-active-h;
-        }
+      a:hover {
+        color: $text-active-h;
       }
 
-      &:active {
-        a {
-          opacity: 0.3;
-        }
+      a:active {
+        opacity: 0.3;
       }
     }
   }
@@ -191,6 +179,11 @@
     }
   }
 }
+/*@media (max-width: $desktop-width) {
+  .main-nav--closed {
+    display: none;
+  }
+}*/
 
 @media (min-width: $desktop-width) {
   .main-nav {
