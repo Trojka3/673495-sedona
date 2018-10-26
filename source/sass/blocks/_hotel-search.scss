@@ -33,27 +33,27 @@
   .hotel-search {
     margin-top: 55px;
     margin-bottom: 58px;
+  }
 
-    &__header {
-      font-size: 30px;
-      margin-bottom: 35px;
-    }
+  .hotel-search__header {
+    font-size: 30px;
+    margin-bottom: 35px;
+  }
 
-    &__text {
-      width: 430px;
-      margin-botom: 45px;
-    }
+  .hotel-search__text {
+    width: 430px;
+    margin-botom: 45px;
+  }
 
-    &__button {
-      width: 458px;
-    }
+  .hotel-search__button {
+    width: 458px;
+  }
 
-    &__br-m {
-      display: none;
-    }
+  .hotel-search__br-m {
+    display: none;
+  }
 
-    &__br-t {
-      display: inline;
-    }
+  .hotel-search__br-t {
+    display: inline;
   }
 }
