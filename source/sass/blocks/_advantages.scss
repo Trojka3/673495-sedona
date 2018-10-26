@@ -3,6 +3,7 @@
   justify-content: flex-start;
   width: 320px;
   min-height: 417px;
+  text-align: left;
 }
 
 .advantages__list {
@@ -41,6 +42,7 @@
 .advantages__header {
   @include zero;
   @include header;
+  text-align: left;
   margin-top: 30px;
   margin-bottom: 15px;
 }
@@ -48,12 +50,10 @@
 .advantages__text {
   @include zero;
   @include text;
+  text-align: left;
   width: 210px;
 }
 
-.text-left {
-  text-align: left;
-}
 .advantages__br-t,
 .advantages__br-d {
   display: none;

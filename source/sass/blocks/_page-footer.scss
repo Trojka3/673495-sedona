@@ -16,37 +16,6 @@
   margin-bottom: 30px;
 }
 
-.social__list {
-  display: flex;
-  width: 150px;
-  list-style: none;
-  @include zero;
-  justify-content: space-between;
-}
-.social__item {
-  style: none;
-}
-
-.social__link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 46px;
-  height: 46px;
-  background-color: $theme-color;
-
-  &:active {
-    background-color: $color-active;
-    img {
-      opacity: 0.3;
-      }
-  }
-
-  &:hover {
-    background-color: $color-hover;
-  }
-}
-
 .page-footer__copyright {
   display: flex;
   justify-content: space-between;
@@ -55,13 +24,13 @@
   @include zero;
 }
 
-.copyright__text {
+.page-footer__copyright-text {
   @include header;
   font-size: 14px;
   padding-left: 5px;
 }
 
-.copyright__img {
+.page-footer__copyright-img {
   display: block;
   &:hover {
 

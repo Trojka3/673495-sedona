@@ -61,16 +61,33 @@ img {
   display: block;
 }
 
+.button {
+  display: block;
+  width: 280px;
+  min-height: 58px;
+  @include zero;
+  margin: 0 auto;
+  background-color: $theme-color;
+  @include header;
+  font-size: 21px;
+  color: $text-white;
+  text-transform: uppercase;
+  border: none;
+}
+
 @import "blocks/page-header.scss";
+@import "blocks/main-nav.scss";
 @import "blocks/intro.scss";
 @import "blocks/reasons.scss";
 @import "blocks/reasons-short.scss";
 @import "blocks/advantages.scss";
 @import "blocks/hotel-search.scss";
 @import "blocks/map.scss";
-@import "blocks/form-section.scss";
+@import "blocks/form.scss";
 @import "blocks/checkbox.scss";
+@import "blocks/radio.scss";
 @import "blocks/album.scss";
 @import "blocks/page-footer.scss";
+@import "blocks/social.scss";
 @import "blocks/video.scss";
 @import "blocks/popup.scss";

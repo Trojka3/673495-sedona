@@ -19,20 +19,6 @@
   width: 300px;
 }
 
-.button {
-  display: block;
-  width: 280px;
-  min-height: 58px;
-  @include zero;
-  margin: 0 auto;
-  background-color: $theme-color;
-  @include header;
-  font-size: 21px;
-  color: $text-white;
-  text-transform: uppercase;
-  border: none;
-}
-
 .hotel-search__button {
   display: flex;
   justify-content: center;

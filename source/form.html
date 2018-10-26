@@ -15,20 +15,20 @@
             <span class="visually-hidden">закрыть меню</span>
             <img src="img/icon-cross.svg" height="23" width="23" alt="icon-cross">
           </button>
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
               <a class="block" href="index.html">главная
               </a>
             </li>
-            <li class="site-list__item">
+            <li class="main-nav__item">
               <a class="block" href="photo.html">фото и видео
               </a>
             </li>
-            <li class="site-list__item site-list__item--active">
+            <li class="main-nav__item site-list__item--active">
               <a class="block">форма отзыва
               </a>
             </li>
-            <li class="site-list__item">
+            <li class="main-nav__item">
               <a class="block" href="#">html academy
               </a>
             </li>
@@ -66,28 +66,28 @@
         <form class="form__list" action="https://echo.htmlacademy.ru" method="get" name="form">
           <fieldset class="form__item name">
             <legend class="form__header">представьтесь:</legend>
-            <div class="name__unit">
+            <div class="form__name-item">
               <label class="form__label" for="name">имя*:</label>
               <input class="form__placeholder form__placeholder--name"  type="text" id="name" name="name" placeholder="Петр" required>
             </div>
-            <div class="name__unit">
+            <div class="form__name-item">
               <label class="form__label" for="surname">фамилия*:</label>
               <input class="form__placeholder form__placeholder--surname" type="text" id="surname" name="surname" placeholder="Иванов" required>
             </div>
-            <div class="name__unit">
+            <div class="form__name-item">
               <label class="form__label" for="fname">отчество:</label>
               <input class="form__placeholder form__placeholder--fname" type="text" id="fname" name="fname" placeholder="Александрович">
             </div>
           </fieldset>
           <fieldset class="form__item contacts">
             <legend class="form__header">контактная информация:</legend>
-            <div class="form__contacts contacts">
-              <div class="contacts__item">
+            <div class="form__contacts">
+              <div class="form__contacts-item">
                 <label class="form__label--phone phone" for="phone">контактный телефон*:</label>
-                <label class="form__label--phone phone--desktop" for="phone">телефон*:</label>
+                <label class="form__label--phone-desktop" for="phone">телефон*:</label>
                 <input class="form__placeholder form__placeholder--phone" type="tel" id="phone" name="phone" pattern="[0-9]{11}" placeholder="Введите телефон" required>
               </div>
-              <div class="contacts__item">
+              <div class="form__contacts-item">
                 <label class="form__label--email" for="email">электронная почта*:</label>
                 <input class="form__placeholder form__placeholder--email" type="email" id="email" name="email" placeholder="Введите e-mail" required>
               </div>
@@ -98,15 +98,15 @@
             <ul class="radio__list">
               <li class="radio__item">
                 <input type="radio" class="visually-hidden radio__input" name="impress" value="impress-positive" id="impress-positive" checked>
-                <label class="form__label--radio" for="impress-positive">Скорее положительное</label>
+                <label class="radio__label form__label--radio" for="impress-positive">Скорее положительное</label>
               </li>
               <li class="radio__item">
-                <input type="radio" class="visually-hidden radio__input" name="impress" value="impress-negative" id="impress-negative" checked>
-                <label class="form__label--radio" for="impress-negative">Скорее отрицательное</label>
+                <input type="radio" class="visually-hidden radio__input" name="impress" value="impress-negative" id="impress-negative">
+                <label class="radio__label form__label--radio" for="impress-negative">Скорее отрицательное</label>
               </li>
               <li class="radio__item">
                 <input type="radio" class="visually-hidden radio__input" name="impress" value="impress-neutral" id="impress-neutral">
-                <label class="form__label--radio" for="impress-neutral">Затрудняюсь ответить</label>
+                <label class="radio__label form__label--radio" for="impress-neutral">Затрудняюсь ответить</label>
               </li>
             </ul>
           </fieldset>
@@ -167,11 +167,11 @@
             </li>
           </ul>
         </div>
-        <div class="page-footer__copyright copyright">
-          <strong class="copyright__text">разработано</strong>
-          <a class="copyright__link block" href="https://htmlacademy.ru/intensive/adaptive">
+        <div class="page-footer__copyright">
+          <strong class="page-footer__copyright-text">разработано</strong>
+          <a class="page-footer__copyright-link block" href="https://htmlacademy.ru/intensive/adaptive">
             <span class="visually-hidden">HTML Academy</span>
-            <img class="copyright__img" src="img/htmlacademy.svg" height="40" width="40" alt="HTMLAcademy">
+            <img class="page-footer__copyright-img" src="img/htmlacademy.svg" height="40" width="40" alt="HTMLAcademy">
           </a>
         </div>
       </footer>
