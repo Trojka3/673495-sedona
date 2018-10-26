@@ -61,15 +61,16 @@ img {
   display: block;
 }
 
-@import "page-header.scss";
-@import "intro.scss";
-@import "reasons.scss";
-@import "reasons-short.scss";
-@import "advantages.scss";
-@import "hotel-search.scss";
-@import "map.scss";
-@import "form-section.scss";
-@import "popup";
-@import "album.scss";
-@import "page-footer.scss";
-@import "video.scss";
+@import "blocks/page-header.scss";
+@import "blocks/intro.scss";
+@import "blocks/reasons.scss";
+@import "blocks/reasons-short.scss";
+@import "blocks/advantages.scss";
+@import "blocks/hotel-search.scss";
+@import "blocks/map.scss";
+@import "blocks/form-section.scss";
+@import "blocks/checkbox.scss";
+@import "blocks/album.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/video.scss";
+@import "blocks/popup.scss";

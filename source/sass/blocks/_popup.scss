@@ -13,6 +13,7 @@
   transform: translateX(-50%);
 
   display: none;
+
   &__header {
     @include zero;
     @include header;
@@ -31,13 +32,15 @@
   min-height: 323px;
 
   .popup__text {
-  margin-bottom: 40px;
+    margin-bottom: 40px;
   }
+
   .popup__button-wrapper {
     min-height: 98px;
     width: 320px;
     background-color: #f2f2f2;
   }
+
   .popup__button {
     width: 280px;
     margin-top: 20px;
@@ -48,10 +51,9 @@
   min-height: 280px;
 
   .popup__text {
-  margin-bottom: 30px;
+    margin-bottom: 30px;
   }
 }
-
 
 @media (min-width: $tablet-width) {
   .popup {
@@ -85,6 +87,7 @@
       margin-top: 60px;
       margin-bottom: 30px;
     }
+
     .popup__text {
       width: 420px;
       margin-bottom: 30px;
@@ -94,6 +97,7 @@
       min-height: 146px;
       width: 640px;
     }
+
     .popup__button {
       width: 458px;
       margin-top: 44px;
