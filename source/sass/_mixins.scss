@@ -6,6 +6,10 @@
   text-align: center;
 }
 
+@mixin header-t {
+  font-size: 21px;
+}
+
 @mixin text {
   font-size: 14px;
   font-weight: regular;
@@ -24,6 +28,14 @@
 @mixin zero {
   margin: 0;
   padding: 0;
+}
+
+@mixin wrapper-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
 }
 
 @mixin out{

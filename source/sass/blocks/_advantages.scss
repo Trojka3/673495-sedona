@@ -1,0 +1,122 @@
+.advantages {
+  @include wrapper-column;
+  justify-content: flex-start;
+  width: 320px;
+  min-height: 417px;
+  text-align: left;
+}
+
+.advantages__list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  @include zero;
+  margin-top: 5px;
+  margin-right: auto;
+}
+
+.advantages__wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-left: 70px;
+}
+
+.advantages__item {
+  background-repeat: no-repeat;
+  background-position: 20px 20px;
+  background-size: 40px 35px;
+
+  &--living {
+    background-image: url('../img/icon-house.svg');
+  }
+
+  &--souvenirs {
+    background-image: url('../img/icon-gift.svg');
+  }
+
+  &--food {
+    background-image: url('../img/icon-burger.svg');
+  }
+}
+
+.advantages__header {
+  @include zero;
+  @include header;
+  text-align: left;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.advantages__text {
+  @include zero;
+  @include text;
+  text-align: left;
+  width: 210px;
+}
+
+.advantages__br-t,
+.advantages__br-d {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .advantages {
+    width: $tablet-width;
+    min-height: 330px;
+
+    &__list {
+      flex-direction: row;
+      margin-top: 0;
+    }
+
+    &__item {
+      background-position: center 60px;
+      background-size: 75px 78px;
+    }
+
+    &__wrapper {
+      width: 256px;
+      padding-left: 0;
+      align-items: center;
+      margin-top: 165px;
+    }
+
+    &__header {
+      margin-top: 0;
+      margin-bottom: 25px;
+      @include header-t;
+    }
+
+    &__text {
+      text-align: center;
+      width: 170px;
+    }
+
+    &__br-t {
+      display: inline;
+    }
+  }
+
+  .advantages__item--souvenirs {
+    order: 3;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages {
+    width: $desktop-width;
+
+    &__wrapper {
+      width: 400px;
+    }
+
+    &__text {
+      width: 310px;
+      padding-bottom: 21px;
+    }
+
+    &__br-d {
+    display: inline;
+    }
+  }
+}

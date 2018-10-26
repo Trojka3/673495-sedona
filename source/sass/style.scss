@@ -1,20 +1,28 @@
 @import "var.scss";
 @import "mixins.scss";
-@import "main-nav.scss";
-@import "intro.scss";
-@import "reasons.scss";
-@import "hotel-search.scss";
-@import "form-section.scss";
-@import "photo-album.scss";
-@import "page-footer.scss";
-@import "video.scss";
+
+@font-face {
+  font-family: 'PT Sans';
+  src:  url('fonts/ptsans.woff2') format('woff2'),
+  url('fonts/ptsans.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PT Sans';
+  src:  url('fonts/ptsansbold.woff2') format('woff2'),
+  url('fonts/ptsansbold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
 
 body {
-  width: 320px;
+  min-width: 320px;
   margin: 0 auto;
   padding: 0;
 
-  font-weight: 400;
+  font-weight: regular;
   font-size: 14px;
   line-height: 26px;
   font-family: 'PT Sans', sans-serif;
@@ -25,16 +33,61 @@ body {
 
 }
 
-.visually-hidden {
+.visually-hidden:not(:focus):not(:active) {
   position: absolute;
+  clip-path: inset(100%);
   clip: rect(0 0 0 0);
   width: 1px;
   height: 1px;
   margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 a {
-  display: block;
   position: relative;
   text-decoration: none;
 }
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.block {
+  display: block;
+}
+
+.button {
+  display: block;
+  width: 280px;
+  min-height: 58px;
+  @include zero;
+  margin: 0 auto;
+  background-color: $theme-color;
+  @include header;
+  font-size: 21px;
+  color: $text-white;
+  text-transform: uppercase;
+  border: none;
+}
+
+@import "blocks/page-header.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/intro.scss";
+@import "blocks/reasons.scss";
+@import "blocks/reasons-short.scss";
+@import "blocks/advantages.scss";
+@import "blocks/hotel-search.scss";
+@import "blocks/map.scss";
+@import "blocks/form.scss";
+@import "blocks/checkbox.scss";
+@import "blocks/radio.scss";
+@import "blocks/album.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/social.scss";
+@import "blocks/video.scss";
+@import "blocks/popup.scss";
