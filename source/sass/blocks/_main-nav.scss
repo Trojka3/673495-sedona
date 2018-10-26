@@ -76,6 +76,11 @@
   background: none;
 }
 
+.main-nav__exit,
+.main-nav__toggle {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
   .main-nav {
     width: $tablet-width;
