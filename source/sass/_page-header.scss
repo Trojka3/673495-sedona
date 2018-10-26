@@ -169,7 +169,7 @@
 
   .page-header__logo {
     margin-top: -58px;
-
+/*
     &--mobile {
       display: none;
     }
@@ -177,6 +177,7 @@
     &--tablet {
       display: block;
     }
+  */
   }
 }
 /*@media (max-width: $desktop-width) {
@@ -193,7 +194,7 @@
   .site-list__item {
     width: 240px;
   }
-
+/*
   .page-header__logo {
     &--tablet {
       display: none;
@@ -202,5 +203,5 @@
     &--desktop {
       display: block;
     }
-  }
+  }*/
 }

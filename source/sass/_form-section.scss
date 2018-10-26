@@ -60,7 +60,7 @@
   @include header;
   text-transform: none;
   text-align: start;
-  color: black;
+  color: #000000;
   padding-top: 16px;
   padding-bottom: 16px;
   padding-left: 20px;
@@ -70,6 +70,11 @@
   outline: none;
   box-sizing: border-box;
   min-height: 58px;
+
+  &::-webkit-input-placeholder {
+    color: #000000;
+    font-family: 'PT Sans', sans-serif;
+  }
 
   &--name {
     width: 230px;

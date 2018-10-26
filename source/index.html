@@ -36,6 +36,7 @@
         </div>
       </nav>
       <div class="page-header__bottom">
+        <!--
         <a class="page-header__logo page-header__logo--mobile  block">
           <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Седона">
         </a>
@@ -44,6 +45,13 @@
         </a>
         <a class="page-header__logo page-header__logo--desktop  block">
           <img class="page-header__logo-image" src="img/logo-sedona-desktop.svg" width="187" height="97" alt="Седона">
+        </a> -->
+        <a class="page-header__logo block">
+          <picture>
+            <source media="(min-width:1200px)" srcset="img/logo-sedona-desktop.svg">
+            <source media="(min-width:768px)" srcset="img/logo-sedona-tablet.svg">
+            <img src="img/logo-sedona-mobile.svg">
+          </picture>
         </a>
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">открыть меню</span>
