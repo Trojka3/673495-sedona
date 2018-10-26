@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Седона: Форма отзыва</title>
+    <meta name="viewport" content="width=dewice-width,initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -14,20 +15,20 @@
             <span class="visually-hidden">закрыть меню</span>
             <img src="img/icon-cross.svg" height="23" width="23" alt="icon-cross">
           </button>
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
               <a class="block" href="index.html">главная
               </a>
             </li>
-            <li class="site-list__item">
+            <li class="main-nav__item">
               <a class="block" href="photo.html">фото и видео
               </a>
             </li>
-            <li class="site-list__item site-list__item--active">
-              <a class="block" href="form.html">форма отзыва
+            <li class="main-nav__item site-list__item--active">
+              <a class="block">форма отзыва
               </a>
             </li>
-            <li class="site-list__item">
+            <li class="main-nav__item">
               <a class="block" href="#">html academy
               </a>
             </li>
@@ -35,14 +36,12 @@
         </div>
       </nav>
       <div class="page-header__bottom">
-        <a class="page-header__logo page-header__logo--mobile  block">
-          <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Седона">
-        </a>
-        <a class="page-header__logo page-header__logo--tablet  block">
-          <img class="page-header__logo-image" src="img/logo-sedona-tablet.svg" width="102" height="83" alt="Седона">
-        </a>
-        <a class="page-header__logo page-header__logo--desktop  block">
-          <img class="page-header__logo-image" src="img/logo-sedona-desktop.svg" width="187" height="97" alt="Седона">
+        <a class="page-header__logo block" href="index.html">
+          <picture>
+            <source media="(min-width:1200px)" srcset="img/logo-sedona-desktop.svg">
+            <source media="(min-width:768px)" srcset="img/logo-sedona-tablet.svg">
+            <img src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Седона">
+          </picture>
         </a>
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">открыть меню</span>
@@ -54,7 +53,7 @@
       <h1 class="visually-hidden">welcome to the gorgeous Sedona "Because the Grand Canyon sucks!"</h1>
       <section class="intro">
         <div class="intro__top intro__top--small">
-          <img class="intro__text-other" src="img/text-sedona.svg" width="230" height="80" alt="intro__text-index">
+          <img class="intro__imgtext-other" src="img/text-sedona.svg" width="460" height="80" alt="intro__text-index">
         </div>
         <div class="intro__discription  intro__discription--form">
           <h2 class="intro__header">оставьте свой отзыв</h2>
@@ -62,31 +61,36 @@
           </p>
         </div>
       </section>
-      <section class="form-section">
+      <section class="form">
         <h2 class="visually-hidden">форма отзыва</h2>
-        <form action="https://echo.htmlacademy.ru" method="get" name="form" class="form">
+        <form class="form__list" action="https://echo.htmlacademy.ru" method="get" name="form">
           <fieldset class="form__item name">
             <legend class="form__header">представьтесь:</legend>
-            <div class="name__unit">
+            <div class="form__name-item">
               <label class="form__label" for="name">имя*:</label>
               <input class="form__placeholder form__placeholder--name"  type="text" id="name" name="name" placeholder="Петр" required>
             </div>
-            <div class="name__unit">
-              <label class="form__label" for="name">фамилия*:</label>
+            <div class="form__name-item">
+              <label class="form__label" for="surname">фамилия*:</label>
               <input class="form__placeholder form__placeholder--surname" type="text" id="surname" name="surname" placeholder="Иванов" required>
             </div>
-            <div class="name__unit">
-              <label class="form__label" for="name">отчество:</label>
+            <div class="form__name-item">
+              <label class="form__label" for="fname">отчество:</label>
               <input class="form__placeholder form__placeholder--fname" type="text" id="fname" name="fname" placeholder="Александрович">
             </div>
           </fieldset>
           <fieldset class="form__item contacts">
             <legend class="form__header">контактная информация:</legend>
             <div class="form__contacts">
-              <label class="form__label--phone" for="phone">контактный телефон*:</label>
-              <input class="form__placeholder form__placeholder--phone" type="tel" id="phone" name="phone" pattern="[0-9]{11}" placeholder="Введите телефон" required>
-              <label class="form__label--email" for="email">электронная почта*:</label>
-              <input class="form__placeholder form__placeholder--email" type="email" id="email" name="email" placeholder="Введите e-mail" required>
+              <div class="form__contacts-item">
+                <label class="form__label--phone phone" for="phone">контактный телефон*:</label>
+                <label class="form__label--phone-desktop" for="phone">телефон*:</label>
+                <input class="form__placeholder form__placeholder--phone" type="tel" id="phone" name="phone" pattern="[0-9]{11}" placeholder="Введите телефон" required>
+              </div>
+              <div class="form__contacts-item">
+                <label class="form__label--email" for="email">электронная почта*:</label>
+                <input class="form__placeholder form__placeholder--email" type="email" id="email" name="email" placeholder="Введите e-mail" required>
+              </div>
             </div>
           </fieldset>
           <fieldset class="form__item radio">
@@ -94,15 +98,15 @@
             <ul class="radio__list">
               <li class="radio__item">
                 <input type="radio" class="visually-hidden radio__input" name="impress" value="impress-positive" id="impress-positive" checked>
-                <label class="form__label--radio" for="impress-positive">Скорее положительное</label>
+                <label class="radio__label form__label--radio" for="impress-positive">Скорее положительное</label>
               </li>
               <li class="radio__item">
                 <input type="radio" class="visually-hidden radio__input" name="impress" value="impress-negative" id="impress-negative">
-                <label class="form__label--radio" for="impress-negative">Скорее отрицательное</label>
+                <label class="radio__label form__label--radio" for="impress-negative">Скорее отрицательное</label>
               </li>
               <li class="radio__item">
                 <input type="radio" class="visually-hidden radio__input" name="impress" value="impress-neutral" id="impress-neutral">
-                <label class="form__label--radio" for="impress-neutral">Затрудняюсь ответить</label>
+                <label class="radio__label form__label--radio" for="impress-neutral">Затрудняюсь ответить</label>
               </li>
             </ul>
           </fieldset>
@@ -131,8 +135,12 @@
             <legend class="form__header">опишите свои эмоции:</legend>
             <textarea class="form__placeholder form__placeholder--text"  name="text" rows="3" placeholder="Опишите подробно все свои восторги"></textarea>
           </fieldset>
-          <button type="submit" name="submit" class="button form__submit">отправить отзыв
-          </button>
+          <div class="form__button">
+            <button type="submit" name="submit" class="button form__submit">отправить отзыв
+            </button>
+            <span class="form__comment">* — обязательные поля
+            </span>
+          </div>
         </form>
       </section>
       <footer class="page-footer">
@@ -159,14 +167,30 @@
             </li>
           </ul>
         </div>
-        <div class="page-footer__copyright copyright">
-          <strong class="copyright__text">разработано</strong>
-          <a class="copyright__link block" href="https://htmlacademy.ru/intensive/adaptive">
+        <div class="page-footer__copyright">
+          <strong class="page-footer__copyright-text">разработано</strong>
+          <a class="page-footer__copyright-link block" href="https://htmlacademy.ru/intensive/adaptive">
             <span class="visually-hidden">HTML Academy</span>
-            <img class="copyright__img" src="img/htmlacademy.svg" height="40" width="40" alt="HTMLAcademy">
+            <img class="page-footer__copyright-img" src="img/htmlacademy.svg" height="40" width="40" alt="HTMLAcademy">
           </a>
         </div>
       </footer>
+      <section class="popup popup__success">
+        <h3 class="popup__header">ваш отзыв отправлен!
+        </h3>
+        <p class="popup__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам.<br> в ближайшее время мы опубликуем его на сайте.
+        </p>
+        <div class="popup__button-wrapper">
+          <button class="button popup__button" type="button" name="popup__close">закрыть окно</button>
+        </div>
+      </section>
+      <section class="popup popup__failure">
+        <h3 class="popup__header">что-то пошло не так!
+        </h3>
+        <p class="popup__text">  Проверьте поля, выделенные красным, скоре всего вы забыли их заполнить
+        </p>
+        <button class="button popup__button" type="button" name="popup__close">ок</button>
+      </section>
     </main>
   </body>
 </html>

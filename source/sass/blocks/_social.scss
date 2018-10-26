@@ -1,0 +1,31 @@
+.social__list {
+  display: flex;
+  width: 150px;
+  list-style: none;
+  @include zero;
+  justify-content: space-between;
+}
+
+.social__item {
+  style: none;
+}
+
+.social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 46px;
+  height: 46px;
+  background-color: $theme-color;
+
+  &:active {
+    background-color: $color-active;
+    img {
+      opacity: 0.3;
+      }
+  }
+
+  &:hover {
+    background-color: $color-hover;
+  }
+}

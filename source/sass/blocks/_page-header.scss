@@ -1,0 +1,30 @@
+.page-header__bottom {
+  position: relative;
+  width: 320px;
+  height: 56px;
+  margin: 0 auto;
+}
+
+.page-header__logo {
+  display: block;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media (min-width: $tablet-width) {
+  .page-header__bottom {
+    height: 0;
+  }
+
+  .page-header__logo {
+    margin-top: -58px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header__logo img {
+    width: 187px;
+    height: 97px;
+  }
+}

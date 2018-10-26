@@ -1,0 +1,156 @@
+.album {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.album__wrapper {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.album__list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  @include zero;
+}
+
+.album__item {
+  @include zero;
+  margin-top: 23px;
+  margin-bottom: 10px;
+}
+
+.album__image {
+  display: block;
+  width: 280px;
+  height: 280px;
+}
+
+.album__header {
+  @include zero;
+  @include photo;
+  padding-top: 15px;
+  margin-bottom: 5px;
+}
+
+.album__autor {
+  @include zero;
+  @include photo;
+  font-weight: normal;
+  color: $text-gray;
+  text-transform: none;
+  margin-bottom: 10px;
+}
+
+.album__like {
+  display: block;
+  min-height: 30px;
+  @include zero;
+  @include photo;
+  padding-left: 35px;
+  background-image: url('../img/icon-like.svg');
+  background-repeat: no-repeat;
+  background-position: 0 -2px;
+  background-size: 22px 22px;
+}
+
+@media (min-width: $tablet-width) {
+  .album {
+    width: $tablet-width;
+
+    &__wrapper {
+      width: 648px;
+    }
+
+    &__list {
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin: 0;
+    }
+
+    &__item {
+      margin: 0;
+      width: 324px;
+
+      &:first-child {
+        width: 648px;
+      }
+    }
+
+    &__image {
+      width: 324px;
+      height: 267px;
+    }
+
+    &__item:first-child .album__image {
+      width: 648px;
+      height: 400px;
+    }
+
+
+    &__discription {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      min-height: 80px;
+      background-color: #f2f2f2;
+    }
+
+    &__h-a {
+      padding-left: 20px;
+    }
+
+    &__header {
+      padding-top: 0;
+      margin-bottom: 5px;
+    }
+    &__autor {
+    margin: 0;
+    }
+    &__like {
+      padding-right: 25px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .album {
+    width: $desktop-width;
+
+    &__wrapper {
+      width: 1200px;
+    }
+
+    &__item {
+      width: 400px;
+      position: relative;
+      &:first-child {
+        width: 1200px;
+      }
+    }
+
+    &__image {
+      width: 400px;
+      height: 267px;
+    }
+
+    &__item:first-child .album__image {
+      width: 1200px;
+      height: 400px;
+    }
+
+    &__discription {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    &__header,
+    &__autor,
+    &__like {
+      color: $text-white;
+    }
+  }
+}

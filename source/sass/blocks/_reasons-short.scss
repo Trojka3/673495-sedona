@@ -1,0 +1,110 @@
+.reasons {
+  @include zero;
+}
+
+.reasons-short {
+  list-style: none;
+  @include zero;
+  @include wrapper-column;
+  width: 320px;
+  background-color: #eeeeee;
+}
+.reasons-short__wrapper {
+  @include wrapper-column;
+}
+
+.reasons-short__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @include zero;
+  width: 320px;
+  min-height: 167px;
+  &:not(:last-child)::after {
+    content:"";
+    position: absolute;
+    width: 280px;
+    height: 1px;
+    left: 20px;
+    bottom: 0;
+    background-color: #e3e3e3;
+  }
+}
+
+.reasons-short__header {
+  @include zero;
+  @include header;
+  margin-bottom: 15px;
+}
+
+.reasons-short__number {
+  display: block;
+  @include zero;
+  @include text;
+}
+
+.reasons-short__text {
+  @include zero;
+  @include text;
+  width: 250px;
+  margin-top: 20px;
+}
+
+.reasons-short__item:first-child {
+  .reasons-short__text {
+    width: 320px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .reasons-short {
+    flex-direction: row;
+    width: $tablet-width;
+    min-height: 256px;
+  }
+  .reasons-short__wrapper {
+    width: 256px;
+  }
+
+  .reasons-short__header {
+    width: 120px;
+    @include header-t;
+  }
+  .reasons-short__item:first-child  {
+    .reasons-short__text {
+      width: 160px;
+    }
+  }
+
+  .reasons-short__text {
+    width: 150px;
+    margin-top: 25px;
+  }
+
+  .reasons-short__item:not(:last-child)::after {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .reasons-short {
+    width: $desktop-width;
+
+    &__item {
+      width: 400px;
+    }
+
+    &__text {
+      width: 280px;
+      padding-bottom: 21px;
+    }
+  }
+
+  .reasons-short__item:first-child  {
+    .reasons-short__text {
+      width: 320px;
+    }
+  }
+}
