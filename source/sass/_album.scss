@@ -23,11 +23,8 @@
 
 .album__image {
   display: block;
-
-  &--tablet,
-  &--desktop {
-    display: none;
-  }
+  width: 280px;
+  height: 280px;
 }
 
 .album__header {
@@ -82,13 +79,15 @@
     }
 
     &__image {
-      &--tablet {
-        display: block;
-      }
-      &--mobile {
-        display: none;
-      }
+      width: 324px;
+      height: 267px;
     }
+
+    &__item:first-child .album__image {
+      width: 648px;
+      height: 400px;
+    }
+
 
     &__discription {
       display: flex;
@@ -132,12 +131,13 @@
     }
 
     &__image {
-      &--desktop {
-        display: block;
-      }
-      &--tablet {
-        display: none;
-      }
+      width: 400px;
+      height: 267px;
+    }
+
+    &__item:first-child .album__image {
+      width: 1200px;
+      height: 400px;
     }
 
     &__discription {

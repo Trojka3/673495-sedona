@@ -41,11 +41,8 @@
 
 .reasons-full__image {
   display: block;
-
-  &--tablet,
-  &--desktop {
-    display: none;
-  }
+  width: 320px;
+  height: 260px;
 }
 
 .reasons-full__br {
@@ -59,14 +56,10 @@
   }
 
   .reasons-full__image {
-    &--tablet {
-      display: block;
-    }
-
-    &--mobile {
-    display: none;
-    }
+    width: 512px;
+    height: 256px;
   }
+
   .reasons-full__discription {
     width: 256px;
   }
@@ -100,16 +93,12 @@
   }
 
   .reasons-full__image {
-    &--desktop {
-      display: block;
-      object-fit: cover;
-      object-position: 0 center;
-    }
-
-    &--tablet {
-    display: none;
-    }
+    height: 256px;
+    width: 800px;
+    object-fit: cover;
+    object-position: 0 center;
   }
+
   .reasons-full__discription{
     width: 400px;
   }

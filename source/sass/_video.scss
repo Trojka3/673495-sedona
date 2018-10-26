@@ -27,15 +27,10 @@
 }
 
 .video__pic {
+display: block;
   margin: 0 auto;
-  &--mobile {
-    display: block;
-  }
-
-  &--tablet,
-  &--desktop {
-    display: none;
-  }
+  width: 320px;
+  height: 201px;
 }
 
 .video__bar {
@@ -106,13 +101,8 @@
   }
 
   .video__pic {
-    &--tablet {
-      display: block;
-    }
-
-    &--mobile {
-      display: none;
-    }
+    width: 648px;
+    height: 499px;
   }
 
   .video__bar {
@@ -167,14 +157,10 @@
   }
 
   .video__pic {
-    &--desktop {
-      display: block;
-    }
-
-    &--tablet {
-      display: none;
-    }
+    width: 800px;
+    height: 500px;
   }
+
   .video__bar {
     width: 800px;
     left: 200px;

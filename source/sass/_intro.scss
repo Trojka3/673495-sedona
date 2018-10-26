@@ -22,6 +22,12 @@
   }
 }
 
+@media (min-resolution:144dpi), (min-resolution:1.5dppx) {
+  .intro__top {
+    background-image:  url("../img/bg-intro-triangle-mobile.svg"), url("../img/bg-back-mobile@2x.jpg");
+  }
+}
+
 .intro__imgtext-index {
   display: block;
   padding-top: 90px;
@@ -91,6 +97,13 @@
     }
   }
 
+  @media (min-resolution:144dpi), (min-resolution:1.5dppx) {
+    .intro__top {
+      background-image:  url("../img/bg-intro-triangle-tablet.svg"), url("../img/bg-back-tablet@2x.jpg");
+    }
+  }
+
+
   .intro__imgtext-index {
     height: 350px;
     width: 462px;
@@ -146,6 +159,12 @@
 
     &--small {
       height: 300px;
+    }
+  }
+
+  @media (min-resolution:144dpi), (min-resolution:1.5dppx) {
+    .intro__top {
+      background-image:  url("../img/bg-intro-triangle-desktop.svg"), url("../img/bg-back-desktop@2x.jpg");
     }
   }
 
