@@ -13,7 +13,6 @@
   background-repeat: no-repeat, no-repeat;
   background-size: 1200px 57px, 768px 389px;
   background-position:center bottom, top;
-  /*треугольник не ставится bottomом вниз? */
 
   &--small {
     height: 158px;
@@ -34,8 +33,8 @@
   margin: 0 auto;
   width: 282px;
   height: 214px;
-
 }
+
 .intro__imgtext-other {
   display: block;
   height: 40px;
