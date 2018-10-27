@@ -84,6 +84,18 @@ display: block;
   margin-left: 31px;
 }
 
+.video__replay,
+.video__subtitles,
+.video__fullscreen {
+  &:hover {
+    fill: #333333;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .video {
     width: $tablet-width;
@@ -143,6 +155,22 @@ display: block;
 
   .video__subtitles {
     margin-left: 473px;
+  }
+
+  .video__replay,
+  .video__subtitles,
+  .video__fullscreen {
+    fill: #ffffff;
+
+    &:hover {
+      fill: #ffffff;
+      opacity: 0.6;
+    }
+
+    &:active {
+      fill: #ffffff;
+      opacity: 0.3;
+    }
   }
 }
 

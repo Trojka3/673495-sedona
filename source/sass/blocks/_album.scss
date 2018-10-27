@@ -50,9 +50,11 @@
   @include photo;
   padding-left: 35px;
   background-image: url('../img/icon-like.svg');
+  fill: red;
   background-repeat: no-repeat;
   background-position: 0 -2px;
   background-size: 22px 22px;
+  opacity: 0.3;
 }
 
 @media (min-width: $tablet-width) {

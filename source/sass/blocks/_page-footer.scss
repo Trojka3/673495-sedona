@@ -32,11 +32,14 @@
 
 .page-footer__copyright-img {
   display: block;
+  fill: #000000;
+
   &:hover {
-
+    fill:$theme-color;
   }
-  &:active {
 
+  &:active {
+    opacity: 0.3;
   }
 }
 
