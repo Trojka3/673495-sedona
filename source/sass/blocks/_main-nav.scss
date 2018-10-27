@@ -41,12 +41,11 @@
     text-decoration: none;
     outline: none;
     height: 58px;
-    font-family: PTSans, Arial, sans-serif;
+    font-family: 'PTSans', 'Arial', sans-serif;
     font-weight: bold;
     font-size: 18px;
     line-height: 40px;
     text-transform: uppercase;
-    text-decoration: none;
     color: rgb(255, 255, 255);
     display: flex;
     justify-content: center;
@@ -88,6 +87,7 @@
   }
 
   .main-nav__list {
+
     @include zero;
     display: flex;
     flex-direction: row;

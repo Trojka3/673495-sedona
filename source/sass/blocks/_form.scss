@@ -3,6 +3,7 @@
   margin: 0 auto;
   margin-bottom: 70px;
 }
+
 .form__list {
   display: flex;
   flex-direction: column;
@@ -11,12 +12,13 @@
 .form__item {
   position: relative;
   border: none;
+
   @include zero;
   margin-top: 20px;
   margin-bottom: 25px;
 
   &::before {
-    content:"";
+    content: "";
     position: absolute;
     width: 320px;
     height: 1px;
@@ -28,8 +30,10 @@
 
 .form__header {
   display: block;
+
 	@include zero;
-	@include header;
+
+  @include header;
   margin: 0 auto;
   margin-bottom: 25px;
 }
@@ -100,11 +104,13 @@
   &--text {
     width: 280px;
     min-height: 160px;
+    overflow: auto;
   }
 }
 
 .form__label--radio,
 .form__label--checkbox {
+  position: relative;
 	@include zero;
 	@include header;
 	text-transform: none;

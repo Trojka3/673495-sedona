@@ -8,7 +8,14 @@
   @include wrapper-column;
   width: 320px;
   background-color: #eeeeee;
+
+  &:after {
+    content: "";
+    min-height: inherit;
+    font-size: 0;
+  }
 }
+
 .reasons-short__wrapper {
   @include wrapper-column;
 }
@@ -22,8 +29,9 @@
   @include zero;
   width: 320px;
   min-height: 167px;
+
   &:not(:last-child)::after {
-    content:"";
+    content: "";
     position: absolute;
     width: 280px;
     height: 1px;
