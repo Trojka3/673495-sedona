@@ -44,115 +44,123 @@
 }
 
 .album__like {
-  display: block;
-  min-height: 30px;
+  display: flex;
+  min-height: 22px;
+}
+
+.album__like-img {
+  opacity: 0.3;
+  margin-right: 15px;
+}
+
+.album__like-number {
   @include zero;
   @include photo;
-  padding-left: 35px;
-  background-image: url('../img/icon-like.svg');
-  fill: red;
-  background-repeat: no-repeat;
-  background-position: 0 -2px;
-  background-size: 22px 22px;
-  opacity: 0.3;
 }
 
 @media (min-width: $tablet-width) {
   .album {
     width: $tablet-width;
+  }
 
-    &__wrapper {
-      width: 648px;
-    }
+  .album__wrapper {
+    width: 648px;
+  }
 
-    &__list {
-      flex-direction: row;
-      flex-wrap: wrap;
-      margin: 0;
-    }
-
-    &__item {
-      margin: 0;
-      width: 324px;
-
-      &:first-child {
-        width: 648px;
-      }
-    }
-
-    &__image {
-      width: 324px;
-      height: 267px;
-    }
-
-    &__item:first-child .album__image {
-      width: 648px;
-      height: 400px;
-    }
-
-
-    &__discription {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      min-height: 80px;
-      background-color: #f2f2f2;
-    }
-
-    &__h-a {
-      padding-left: 20px;
-    }
-
-    &__header {
-      padding-top: 0;
-      margin-bottom: 5px;
-    }
-    &__autor {
+  .album__list {
+    flex-direction: row;
+    flex-wrap: wrap;
     margin: 0;
+  }
+
+  .album__item {
+    margin: 0;
+    width: 324px;
+
+    &:first-child {
+      width: 648px;
     }
-    &__like {
-      padding-right: 25px;
-    }
+  }
+
+  .album__image {
+    width: 324px;
+    height: 267px;
+  }
+
+  .album__item:first-child .album__image {
+    width: 648px;
+    height: 400px;
+  }
+
+  .album__discription {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 80px;
+    background-color: #f2f2f2;
+  }
+
+  .album__h-a {
+    padding-left: 20px;
+  }
+
+  .album__header {
+    padding-top: 0;
+    margin-bottom: 5px;
+  }
+
+  .album__autor {
+    margin: 0;
+  }
+
+  .album__like {
+    padding-right: 25px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .album {
     width: $desktop-width;
+  }
 
-    &__wrapper {
+  .album__wrapper {
+    width: 1200px;
+  }
+
+  .album__item {
+    width: 400px;
+    position: relative;
+
+    &:first-child {
       width: 1200px;
     }
+  }
 
-    &__item {
-      width: 400px;
-      position: relative;
-      &:first-child {
-        width: 1200px;
-      }
-    }
+  .album__image {
+    width: 400px;
+    height: 267px;
+  }
 
-    &__image {
-      width: 400px;
-      height: 267px;
-    }
+  .album__item:first-child .album__image {
+    width: 1200px;
+    height: 400px;
+  }
 
-    &__item:first-child .album__image {
-      width: 1200px;
-      height: 400px;
-    }
+  .album__discription {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
 
-    &__discription {
-      position: absolute;
-      bottom: 0;
-      width: 100%;
-      background-color: rgba(0, 0, 0, 0.3);
-    }
+  .album__header,
+  .album__autor,
+  .album__like-number {
+    color: $text-white;
+  }
 
-    &__header,
-    &__autor,
-    &__like {
-      color: $text-white;
-    }
+  .album__like-img {
+    fill: #ffffff;
+    opacity: 1;
   }
 }
