@@ -86,7 +86,7 @@
     @include header-t;
   }
 
-  .reasons-short__item:first-child  {
+  .reasons-short__item:first-child {
     .reasons-short__text {
       width: 160px;
     }
@@ -105,18 +105,18 @@
 @media (min-width: $desktop-width) {
   .reasons-short {
     width: $desktop-width;
-
-    &__item {
-      width: 400px;
-    }
-
-    &__text {
-      width: 280px;
-      padding-bottom: 21px;
-    }
   }
 
-  .reasons-short__item:first-child  {
+  .reasons-short__item {
+    width: 400px;
+  }
+
+  .reasons-short__text {
+    width: 280px;
+    padding-bottom: 21px;
+  }
+
+  .reasons-short__item:first-child {
     .reasons-short__text {
       width: 320px;
     }

@@ -87,7 +87,6 @@
   }
 
   .main-nav__list {
-
     @include zero;
     display: flex;
     flex-direction: row;
@@ -115,7 +114,8 @@
       line-height: 26px;
     }
 
-    a[href]:hover {
+    a[href]:hover,
+    a[href]:focus {
       background-color: $color-none;
       color: $theme-color;
     }

@@ -31,8 +31,7 @@
 .form__header {
   display: block;
 
-	@include zero;
-
+  @include zero;
   @include header;
   margin: 0 auto;
   margin-bottom: 25px;
@@ -46,11 +45,9 @@
   display: block;
 
 	@include zero;
-
   @include text;
   text-transform: uppercase;
 	line-height: 26px;
-
   &--phone {
     padding-left: 20px;
   }
@@ -62,6 +59,7 @@
 
 .form__placeholder {
   display: block;
+
   @include zero;
   @include header;
   text-transform: none;
@@ -77,9 +75,20 @@
   box-sizing: border-box;
   min-height: 58px;
 
+  &:hover {
+    background-color: #e5e5e5;
+  }
+
+  &:active,
+  &:focus {
+    background-color: #ffffff;
+    outline: 4px solid #e5e5e5;
+    outline-offset: -4px;
+  }
+
   &::-webkit-input-placeholder {
     color: #000000;
-    font-family: 'PT Sans', sans-serif;
+    font-family: "PT Sans", sans-serif;
   }
 
   &--name {
@@ -113,6 +122,7 @@
 .form__label--radio,
 .form__label--checkbox {
   position: relative;
+
 	@include zero;
 	@include header;
 	text-transform: none;
@@ -124,7 +134,7 @@
 }
 
 .form__contacts::before {
-  content:"";
+  content: "";
   display: block;
   position: absolute;
   width: 58px;
@@ -139,13 +149,13 @@
 }
 
 .form__contacts::after {
-  content:"";
+  content: "";
   display: block;
   position: absolute;
   width: 58px;
   height: 58px;
   right: 0;
-  bottom: 0px;
+  bottom: 0;
   background-color: #e6e6e6;
   background-image: url("../img/icon-mail.svg");
   background-size: auto;
@@ -163,6 +173,7 @@
 .form__comment {
   display: none;
 }
+
 .form__label--phone-desktop {
   display: none;
 }
@@ -186,6 +197,7 @@
       display: none;
     }
   }
+
   .form__item:nth-child(2)::before,
   .form__item:nth-child(4)::before,
   .form__item:nth-child(5)::before {
@@ -200,7 +212,7 @@
   .form__item:nth-child(2)::after,
   .form__item:nth-child(4)::after,
   .form__item:nth-child(5)::after {
-    content:"";
+    content: "";
     position: absolute;
     background-color: #dbdbdb;
     right: 0;
@@ -275,6 +287,7 @@
 
   .form__comment {
     display: block;
+
     @include text;
   }
 }
@@ -336,6 +349,7 @@
       margin-top: 35px;
     }
   }
+
   .form__contacts {
     display: flex;
     margin-top: 50px;
@@ -378,6 +392,7 @@
   .form__button {
     width: 960px;
   }
+
   .form__submit {
     width: 480px;
   }

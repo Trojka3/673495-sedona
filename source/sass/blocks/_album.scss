@@ -99,6 +99,12 @@
     align-items: center;
     min-height: 80px;
     background-color: #f2f2f2;
+
+    &::after {
+      content: "";
+      min-height: inherit;
+      font-size: 0;
+    }
   }
 
   .album__h-a {
@@ -116,6 +122,7 @@
 
   .album__like {
     padding-right: 25px;
+    margin-left: auto;
   }
 }
 

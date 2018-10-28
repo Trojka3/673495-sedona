@@ -17,12 +17,12 @@
 
   &--small {
     height: 158px;
-    background-size: 320px 27px,768px 158px cover;
+    background-size: 320px 27px, 768px 158px cover;
     background-position: center bottom, bottom;
   }
 }
 
-@media (min-resolution:144dpi), (min-resolution:1.5dppx) {
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .intro__top {
     background-image: url("../img/bg-intro-triangle-mobile.svg"), url("../img/bg-back-mobile@2x.jpg");
   }
@@ -38,7 +38,7 @@
 
 .intro__imgtext-other {
   display: block;
-  height: 40px;
+  height: 50px;
   width: 230px;
   padding-top: 50px;
   margin: 0 auto;
@@ -91,7 +91,7 @@
   .intro__top {
     height: 518px;
     background-image: url("../img/bg-intro-triangle-tablet.svg"), url("../img/bg-back-tablet@1x.jpg");
-    background-size: 768px 57px,768px 518px;
+    background-size: 768px 57px, 768px 518px;
     background-position: center bottom, bottom;
 
     &--small {
@@ -99,7 +99,7 @@
     }
   }
 
-  @media (min-resolution:144dpi), (min-resolution:1.5dppx) {
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .intro__top {
       background-image: url("../img/bg-intro-triangle-tablet.svg"), url("../img/bg-back-tablet@2x.jpg");
     }
@@ -112,7 +112,6 @@
   }
 
   .intro__discription {
-
     &--index {
       width: 500px;
       padding-top: 50px;
@@ -164,7 +163,7 @@
     }
   }
 
-  @media (min-resolution:144dpi), (min-resolution:1.5dppx) {
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .intro__top {
       background-image: url("../img/bg-intro-triangle-desktop.svg"), url("../img/bg-back-desktop@2x.jpg");
     }
@@ -177,7 +176,7 @@
   .intro__discription {
     &--photo,
     &--form {
-    padding-top: 110px;
+      padding-top: 110px;
     }
   }
 
