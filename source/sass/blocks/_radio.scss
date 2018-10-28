@@ -6,7 +6,6 @@
   flex-direction: column;
   justify-content: space-between;
   padding-left: 75px;
-  padding-top: 15px;
   padding-bottom: 15px;
   min-height: 165px;
 }
@@ -23,17 +22,6 @@
   display: none;
 }
 
-.form__label--radio::before {
-  content: "";
-  position: absolute;
-  width: 56px;
-  height: 56px;
-  border-radius: 30px;
-  background-color: #f2f2f2;
-  left: -80px;;
-  bottom: 14px;
-}
-
 .radio__label::before {
   content: "";
   position: absolute;
@@ -42,7 +30,7 @@
   border-radius: 30px;
   background-color: #f2f2f2;
   left: -80px;;
-  bottom: 14px;
+  bottom: -14px;
 }
 
 .radio__label:hover::before {
@@ -61,7 +49,7 @@
   border-radius: 15px;
   background-color: #333333;
   left: -63px;;
-  bottom: 31px;
+  bottom: 3px;
   z-index: 3;
 }
 .radio__input:checked+label:active::after {
