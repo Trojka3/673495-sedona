@@ -22,12 +22,13 @@
   @include zero;
   @include text;
 }
+
 .video__image {
   position: relative;
 }
 
 .video__pic {
-display: block;
+  display: block;
   margin: 0 auto;
   width: 320px;
   height: 201px;
@@ -46,6 +47,7 @@ display: block;
   height: 45px;
   background-color: rgba(0, 0, 0, 0.6);
 }
+
 .video__scale {
   position: absolute;
   width: 235px;
@@ -82,6 +84,18 @@ display: block;
 
 .video__fullscreen {
   margin-left: 31px;
+}
+
+.video__replay,
+.video__subtitles,
+.video__fullscreen {
+  &:hover {
+    fill: #333333;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -144,6 +158,22 @@ display: block;
   .video__subtitles {
     margin-left: 473px;
   }
+
+  .video__replay,
+  .video__subtitles,
+  .video__fullscreen {
+    fill: #ffffff;
+
+    &:hover {
+      fill: #ffffff;
+      opacity: 0.6;
+    }
+
+    &:active {
+      fill: #ffffff;
+      opacity: 0.3;
+    }
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -172,5 +202,9 @@ display: block;
 
   .video__subtitles {
     margin-left: 624px;
+  }
+
+  .video__bar-bottom {
+    width: 800px;
   }
 }

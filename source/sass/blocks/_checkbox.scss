@@ -1,18 +1,21 @@
 
 .checkbox__list {
   list-style: none;
+
   @include zero;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  display: block;
   min-height: 296px;
   margin-top: 15px;
-  margin-bottom: 15px;
   margin-left: 78px;
 }
 
 .checkbox__item {
   position: relative;
+  min-height: 58px;
+
+  &:not(:last-child) {
+    margin-bottom: 25px;
+  }
 }
 
 .checkbox__input,
@@ -27,7 +30,7 @@
   height: 56px;
   border-radius: 5px;
   background-color: #f2f2f2;
-  left: -80px;;
+  left: -80px;
   bottom: -14px;
 }
 
@@ -39,7 +42,7 @@
   background-color: #d5d5d5;
 }
 
-.checkbox__input:checked+label::after {
+.checkbox__input:checked + label::after {
   content: "";
   position: absolute;
   width: 22px;
@@ -47,48 +50,12 @@
   background-image: url("../img/icon-tick.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
-  left: -63px;;
+  left: -63px;
   bottom: 0;
   z-index: 3;
 }
 
-.checkbox__input:checked+label:active::after {
-  opacity: 0.3;
-}
-
-.checkbox__item label::before {
-  content: "";
-  position: absolute;
-  width: 56px;
-  height: 56px;
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  left: -80px;;
-  bottom: -14px;
-}
-
-.checkbox__item label:hover::before {
-  background-color: #e5e5e5;
-}
-
-.checkbox__item label:active::before {
-  background-color: #d5d5d5;
-}
-
-.checkbox__input:checked+label::after {
-  content: "";
-  position: absolute;
-  width: 22px;
-  height: 22px;
-  background-image: url("../img/icon-tick.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  left: -63px;;
-  bottom: 0;
-  z-index: 3;
-}
-
-.checkbox__input:checked+label:active::after {
+.checkbox__input:checked + label:active::after {
   opacity: 0.3;
 }
 
@@ -98,6 +65,7 @@
 
 @media (min-width: $tablet-width) {
   .checkbox__list {
+    display: flex;
     margin: 0;
     flex-direction: row;
     justify-content: flex-start;
@@ -114,16 +82,20 @@
     box-sizing: border-box;
     width: 260px;
     padding-left: 80px;
+
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
   }
 
   .checkbox__item label::before {
-    left: 0;
-    bottom: 14px;
+    left: -80px;
+    bottom: -14px;
   }
 
-  .checkbox__input:checked+label::after {
-    left: 17px;
-    bottom: 28px;
+  .checkbox__input:checked + label::after {
+    left: -63px;
+    bottom: 0;
   }
 }
 

@@ -10,6 +10,7 @@
   display: flex;
   flex-direction: column;
   list-style: none;
+
   @include zero;
   margin-top: 5px;
   margin-right: auto;
@@ -27,15 +28,15 @@
   background-size: 40px 35px;
 
   &--living {
-    background-image: url('../img/icon-house.svg');
+    background-image: url("../img/icon-house.svg");
   }
 
   &--souvenirs {
-    background-image: url('../img/icon-gift.svg');
+    background-image: url("../img/icon-gift.svg");
   }
 
   &--food {
-    background-image: url('../img/icon-burger.svg');
+    background-image: url("../img/icon-burger.svg");
   }
 }
 
@@ -84,6 +85,7 @@
     &__header {
       margin-top: 0;
       margin-bottom: 25px;
+
       @include header-t;
     }
 
@@ -116,7 +118,7 @@
     }
 
     &__br-d {
-    display: inline;
+      display: inline;
     }
   }
 }

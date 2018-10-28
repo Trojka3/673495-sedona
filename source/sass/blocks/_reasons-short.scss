@@ -4,11 +4,19 @@
 
 .reasons-short {
   list-style: none;
+
   @include zero;
   @include wrapper-column;
   width: 320px;
   background-color: #eeeeee;
+
+  &::after {
+    content: "";
+    min-height: inherit;
+    font-size: 0;
+  }
 }
+
 .reasons-short__wrapper {
   @include wrapper-column;
 }
@@ -19,11 +27,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
   @include zero;
   width: 320px;
   min-height: 167px;
+
   &:not(:last-child)::after {
-    content:"";
+    content: "";
     position: absolute;
     width: 280px;
     height: 1px;
@@ -41,6 +51,7 @@
 
 .reasons-short__number {
   display: block;
+
   @include zero;
   @include text;
 }
@@ -64,15 +75,18 @@
     width: $tablet-width;
     min-height: 256px;
   }
+
   .reasons-short__wrapper {
     width: 256px;
   }
 
   .reasons-short__header {
     width: 120px;
+
     @include header-t;
   }
-  .reasons-short__item:first-child  {
+
+  .reasons-short__item:first-child {
     .reasons-short__text {
       width: 160px;
     }
@@ -91,18 +105,18 @@
 @media (min-width: $desktop-width) {
   .reasons-short {
     width: $desktop-width;
-
-    &__item {
-      width: 400px;
-    }
-
-    &__text {
-      width: 280px;
-      padding-bottom: 21px;
-    }
   }
 
-  .reasons-short__item:first-child  {
+  .reasons-short__item {
+    width: 400px;
+  }
+
+  .reasons-short__text {
+    width: 280px;
+    padding-bottom: 21px;
+  }
+
+  .reasons-short__item:first-child {
     .reasons-short__text {
       width: 320px;
     }

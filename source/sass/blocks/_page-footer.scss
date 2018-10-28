@@ -21,22 +21,26 @@
   justify-content: space-between;
   align-items: center;
   width: 140px;
+
   @include zero;
 }
 
 .page-footer__copyright-text {
-  @include header;
-  font-size: 14px;
+  @include text;
+  line-height: 26px;
   padding-left: 5px;
 }
 
 .page-footer__copyright-img {
   display: block;
+  fill: #000000;
+
   &:hover {
-
+    fill: $theme-color;
   }
-  &:active {
 
+  &:active {
+    opacity: 0.3;
   }
 }
 
@@ -52,7 +56,7 @@
 
   .page-footer__link,
   .page-footer__social {
-  margin: 0;
+    margin: 0;
   }
 }
 
