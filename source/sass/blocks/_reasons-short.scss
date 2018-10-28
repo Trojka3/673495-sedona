@@ -4,12 +4,13 @@
 
 .reasons-short {
   list-style: none;
+
   @include zero;
   @include wrapper-column;
   width: 320px;
   background-color: #eeeeee;
 
-  &:after {
+  &::after {
     content: "";
     min-height: inherit;
     font-size: 0;
@@ -26,6 +27,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
   @include zero;
   width: 320px;
   min-height: 167px;
@@ -49,6 +51,7 @@
 
 .reasons-short__number {
   display: block;
+
   @include zero;
   @include text;
 }
@@ -72,14 +75,17 @@
     width: $tablet-width;
     min-height: 256px;
   }
+
   .reasons-short__wrapper {
     width: 256px;
   }
 
   .reasons-short__header {
     width: 120px;
+
     @include header-t;
   }
+
   .reasons-short__item:first-child  {
     .reasons-short__text {
       width: 160px;

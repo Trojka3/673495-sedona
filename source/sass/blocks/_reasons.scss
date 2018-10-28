@@ -66,6 +66,7 @@
 
   .reasons-full__header {
     width: 160px;
+
     @include header-t;
     margin-top: 45px;
     margin-bottom: 10px;
@@ -99,7 +100,7 @@
     object-position: 0 center;
   }
 
-  .reasons-full__discription{
+  .reasons-full__discription {
     width: 400px;
   }
 

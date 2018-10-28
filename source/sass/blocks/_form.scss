@@ -44,9 +44,11 @@
 
 .form__label {
   display: block;
+
 	@include zero;
-	@include text;
-	text-transform: uppercase;
+
+  @include text;
+  text-transform: uppercase;
 	line-height: 26px;
 
   &--phone {

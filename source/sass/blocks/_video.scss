@@ -22,12 +22,13 @@
   @include zero;
   @include text;
 }
+
 .video__image {
   position: relative;
 }
 
 .video__pic {
-display: block;
+  display: block;
   margin: 0 auto;
   width: 320px;
   height: 201px;
@@ -46,6 +47,7 @@ display: block;
   height: 45px;
   background-color: rgba(0, 0, 0, 0.6);
 }
+
 .video__scale {
   position: absolute;
   width: 235px;
