@@ -6,7 +6,7 @@
   list-style: none;
 
   @include zero;
-  @include wrapper-column;
+  margin: 0 auto;
   width: 320px;
   background-color: #eeeeee;
 
@@ -22,15 +22,16 @@
 }
 
 .reasons-short__item {
+  box-sizing: border-box;
   position: relative;
-  display: flex;
-  flex-direction: column;
+  display: block;
   justify-content: center;
   align-items: center;
 
   @include zero;
+  padding-top: 28px;
   width: 320px;
-  min-height: 167px;
+  min-height: 168px;
 
   &:not(:last-child)::after {
     content: "";
@@ -46,7 +47,7 @@
 .reasons-short__header {
   @include zero;
   @include header;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .reasons-short__number {
@@ -60,20 +61,25 @@
   @include zero;
   @include text;
   width: 250px;
-  margin-top: 20px;
+  margin-top: 15px;
 }
 
 .reasons-short__item:first-child {
   .reasons-short__text {
-    width: 320px;
+    width: 280px;
   }
 }
 
 @media (min-width: $tablet-width) {
   .reasons-short {
+  display: flex;
     flex-direction: row;
     width: $tablet-width;
     min-height: 256px;
+  }
+
+  .reasons-short__item {
+    padding-top: 45px;
   }
 
   .reasons-short__wrapper {
@@ -94,7 +100,7 @@
 
   .reasons-short__text {
     width: 150px;
-    margin-top: 25px;
+    margin-top: 22px;
   }
 
   .reasons-short__item:not(:last-child)::after {
@@ -112,7 +118,7 @@
   }
 
   .reasons-short__text {
-    width: 280px;
+    width: 270px;
     padding-bottom: 21px;
   }
 

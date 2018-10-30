@@ -26,7 +26,7 @@
 
 .main-nav__item {
   width: 320px;
-  min-height: 56px;
+  min-height: 40px;
 
   a[href]:hover {
     background-color: $color-hover;
@@ -40,7 +40,7 @@
   a {
     text-decoration: none;
     outline: none;
-    height: 58px;
+    height: 54px;
     font-family: "PT Sans", "Arial", sans-serif;
     font-weight: bold;
     font-size: 18px;

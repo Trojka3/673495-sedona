@@ -8,7 +8,7 @@
 .intro__top {
   display: block;
   box-sizing: border-box;
-  height: 390px;
+  height: 389px;
   background-color: rgb(130, 90, 90);
   background-image: url("../img/bg-intro-triangle-mobile.svg"), url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat, no-repeat;
@@ -30,8 +30,8 @@
 
 .intro__imgtext-index {
   display: block;
-  padding-top: 90px;
   margin: 0 auto;
+  padding-top: 90px;
   width: 282px;
   height: 214px;
 }
@@ -44,28 +44,51 @@
   margin: 0 auto;
 }
 
+.intro__br-t {
+  display: none;
+}
+
 .intro__discription {
   width: 275px;
   margin: 0 auto;
-  padding-top: 40px;
+  padding-top: 42px;
 
   &--index {
-    margin-bottom: 10px;
+    margin-bottom: 8px;
+    line-height: 26px;
   }
 
-  &--form {
+  &--form,
+  &--photo {
     margin-bottom: 20px;
+    padding-top: 40px;
+
+    .intro__header {
+      margin-bottom: 24px;
+    }
+
+    .intro__text {
+      line-height: 24px;
+    }
   }
 
   &--photo {
-    margin-bottom: 30px;
+    margin-bottom: 29px;
+  }
+
+  &--form {
+    margin-bottom: 18px;
+
+    .intro__text {
+      width: 280px;
+    }
   }
 }
 
 .intro__header {
   @include zero;
   @include header;
-  margin-bottom: 30px;
+  margin-bottom: 27px;
 }
 
 .intro__text {
@@ -92,7 +115,7 @@
     height: 518px;
     background-image: url("../img/bg-intro-triangle-tablet.svg"), url("../img/bg-back-tablet@1x.jpg");
     background-size: 768px 57px, 768px 518px;
-    background-position: center bottom, bottom;
+    background-position: center bottom, top;
 
     &--small {
       height: 290px;
@@ -114,24 +137,44 @@
   .intro__discription {
     &--index {
       width: 500px;
+      min-height: 200px;
+      box-sizing: border-box;
       padding-top: 50px;
-      margin-bottom: 55px;
+
     }
 
     &--photo,
     &--form {
-      width: 450px;
-      padding-top: 70px;
-      margin-bottom: 50px;
+      width: 550px;
+      padding-top: 75px;
+      margin-bottom: 68px;
 
       .intro__header {
         font-size: 30px;
+        margin-bottom: 33px;
       }
+
+      .intro__text {
+        width: 440px;
+        margin: 0 auto;
+      }
+    }
+
+    &--form {
+      .intro__header {
+        margin-bottom: 32px;
+      }
+
+      margin-bottom: 73px;
     }
   }
 
+  .intro__br-t {
+    display: inline;
+  }
+
   .intro__header {
-    margin-bottom: 35px;
+    margin-bottom: 30px;
 
     @include header-t;
   }
@@ -156,7 +199,7 @@
     height: 518px;
     background-image: url("../img/bg-intro-triangle-desktop.svg"), url("../img/bg-back-desktop@1x.jpg");
     background-size: 1200px 57px, 1200px 518px;
-    background-position: center bottom, bottom;
+    background-position: center bottom, top;
 
     &--small {
       height: 300px;
@@ -176,12 +219,21 @@
   .intro__discription {
     &--photo,
     &--form {
-      padding-top: 110px;
+      padding-top: 115px;
+      margin-bottom: 71px;
+
+      .intro__header {
+        margin-bottom: 30px;
+      }
+    }
+
+    &--form {
+      margin-bottom: 58px;
     }
   }
 
   .intro__header {
-    margin-bottom: 35px;
+    margin-bottom: 30px;
 
     @include header-t;
   }
