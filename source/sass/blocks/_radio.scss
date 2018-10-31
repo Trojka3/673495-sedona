@@ -36,7 +36,8 @@
   bottom: -17px;
 }
 
-.radio__label:hover::before {
+.radio__label:hover::before
+ {
   background-color: #e5e5e5;
 }
 
@@ -64,6 +65,7 @@
   .radio {
     width: 307px;
   }
+
   .radio__list {
     padding-top: 38px;
     padding-left: 75px;
@@ -74,8 +76,19 @@
     padding-bottom: 22px;
   }
 
- .radio__header {
-  margin: 0 auto;
-  margin-bottom: 20px;
- }
+  .radio__header {
+    width: 307px;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .radio__header {
+    margin-left: 70px;
+  }
+
+  .radio__list {
+    padding-left: 78px;
+  }
 }

@@ -237,18 +237,20 @@
   }
 
   .form__item:nth-child(1) {
-    width: 267px;
-    margin-left: 71px;
+    width: 263px;
+    box-sizing: border-box;
+    margin-left: 75px;
     margin-bottom: 40px;
 
     .form__header {
+      width: 266px;
       margin-bottom: 60px;
-      padding-right: 107px;
+      text-align: left;
     }
   }
 
   .form__contacts {
-    margin-top: 5px;
+    margin-top: 4px;
     padding-bottom: 0;
 
     &::after {
@@ -338,7 +340,8 @@
     margin-left: 160px;
 
     .form__header {
-      padding-right: 240px;
+      margin: 0;
+      margin-bottom: 60px;
     }
   }
 
@@ -409,6 +412,7 @@
 
   .form__label--email {
     width: 160px;
+    margin: 0;
   }
 
   .form__contacts::before {
