@@ -23,7 +23,7 @@
   color: $text-white;
 
   margin-top: 40px;
-  margin-bottom: 15px;
+  margin-bottom: 8px;
 }
 
 .reasons-full__number,
@@ -35,8 +35,7 @@
 }
 
 .reasons-full__text {
-  margin-top: 20px;
-  margin-bottom: 40px;
+  margin-top: 17px;
 }
 
 .reasons-full__image {
@@ -73,9 +72,8 @@
   }
 
   .reasons-full__text {
-    width: 180px;
-    margin-top: 20px;
-    margin-bottom: 45px;
+    width: 170px;
+    margin-top: 25px;
   }
 
   .reasons-full__br {
@@ -103,9 +101,13 @@
   .reasons-full__discription {
     width: 400px;
   }
+  .reasons-full__header {
+    margin-top: 52px;
+  }
 
   .reasons-full__text {
     width: 270px;
+    margin-top: 23px;
   }
 
   .reasons-full:nth-child(3) {

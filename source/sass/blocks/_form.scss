@@ -1,7 +1,7 @@
 .form {
   width: 280px;
   margin: 0 auto;
-  margin-bottom: 70px;
+  margin-bottom: 73px;
 }
 
 .form__list {
@@ -15,7 +15,7 @@
 
   @include zero;
   margin-top: 20px;
-  margin-bottom: 25px;
+  margin-bottom: 5px;
 
   &::before {
     content: "";
@@ -34,11 +34,16 @@
   @include zero;
   @include header;
   margin: 0 auto;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
 .form__contacts {
   position: relative;
+  padding-bottom: 10px;
+}
+
+.form__contacts-item {
+  margin-bottom: 12px;
 }
 
 .form__label {
@@ -49,11 +54,15 @@
   text-transform: uppercase;
 	line-height: 26px;
   &--phone {
-    padding-left: 20px;
+    display: block;
+    padding-left: 21px;
+    margin-bottom: 8px;
   }
 
   &--email {
-    padding-left: 20px;
+    display: block;
+    padding-left: 21px;
+    margin-bottom: 8px;
   }
 }
 
@@ -116,6 +125,7 @@
     width: 280px;
     min-height: 160px;
     overflow: auto;
+    margin-top: -4px;
   }
 }
 
@@ -130,7 +140,7 @@
 }
 
 .form__submit {
-  margin-top: 45px;
+  margin-top: 46px;
 }
 
 .form__contacts::before {
@@ -140,7 +150,7 @@
   width: 58px;
   height: 58px;
   right: 0;
-  top: 25px;
+  top: 33px;
   background-color: #e6e6e6;
   background-image: url("../img/icon-phone.svg");
   background-size: auto;
@@ -155,7 +165,7 @@
   width: 58px;
   height: 58px;
   right: 0;
-  bottom: 0;
+  bottom: 22px;
   background-color: #e6e6e6;
   background-image: url("../img/icon-mail.svg");
   background-size: auto;
@@ -181,7 +191,7 @@
 @media (min-width: $tablet-width) {
   .form {
     width: 648px;
-    margin-bottom: 60px;
+    margin-bottom: 95px;
   }
 
   .form__list {
@@ -192,7 +202,7 @@
   .form__item {
     width: 648px;
     margin-top: 0;
-    margin-bottom: 50px;
+    margin-bottom: 39px;
     &::before {
       display: none;
     }
@@ -227,12 +237,24 @@
   }
 
   .form__item:nth-child(1) {
-    width: 270px;
-    margin-left: 106px;
+    width: 263px;
+    box-sizing: border-box;
+    margin-left: 75px;
+    margin-bottom: 40px;
 
     .form__header {
+      width: 266px;
       margin-bottom: 60px;
-      padding-right: 110px;
+      text-align: left;
+    }
+  }
+
+  .form__contacts {
+    margin-top: 4px;
+    padding-bottom: 0;
+
+    &::after {
+      bottom: 0;
     }
   }
 
@@ -252,7 +274,7 @@
 
     &--phone {
       width: 590px;
-      margin-bottom: 25px;
+      margin-bottom: 22px;
     }
 
     &--email {
@@ -261,11 +283,11 @@
 
     &--text {
       width: 648px;
+      margin-top: 40px;
     }
   }
 
   .form__item:nth-child(3) {
-    width: 272px;
     order: -1;
   }
 
@@ -277,11 +299,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 8px;
+    margin-top: 19px;
     width: 648px;
   }
 
   .form__submit {
+    width: 324px;
     margin: 0;
   }
 
@@ -295,10 +318,12 @@
 @media (min-width: $desktop-width) {
   .form {
     width: 960px;
+    margin-bottom: 100px;
   }
 
   .form__item {
     width: 960px;
+    margin-bottom: 36px;
   }
 
   .form__item:nth-child(3) {
@@ -315,7 +340,8 @@
     margin-left: 160px;
 
     .form__header {
-      padding-right: 240px;
+      margin: 0;
+      margin-bottom: 60px;
     }
   }
 
@@ -346,13 +372,17 @@
 
     &--text {
       width: 960px;
-      margin-top: 35px;
+      margin-top: 38px;
     }
   }
 
   .form__contacts {
     display: flex;
-    margin-top: 50px;
+    margin-top: 54px;
+
+    &::after {
+      bottom: 11px;
+    }
   }
 
   .form__contacts-item {
@@ -382,6 +412,7 @@
 
   .form__label--email {
     width: 160px;
+    margin: 0;
   }
 
   .form__contacts::before {
@@ -391,6 +422,7 @@
 
   .form__button {
     width: 960px;
+    margin-top: 22px;
   }
 
   .form__submit {
