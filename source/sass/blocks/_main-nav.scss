@@ -84,6 +84,7 @@
   .main-nav {
     width: $tablet-width;
     margin: 0 auto;
+    min-height: 56px;
   }
 
   .main-nav__list {
@@ -95,6 +96,7 @@
 
   .main-nav__item {
     width: 153px;
+    min-height: 56px;
 
     &:nth-child(3) {
       margin-left: auto;

@@ -23,23 +23,27 @@
 }
 
 .advantages__item {
-  height: 130px;
   background-repeat: no-repeat;
-  background-position: 22px 20px;
-  background-size: 37px 35px;
 
   &--living {
     background-image: url("../img/icon-house.svg");
+    height: 130px;
+    background-position: 22px 22px;
+    background-size: 38px 36px;
   }
 
   &--souvenirs {
     background-image: url("../img/icon-gift.svg");
     height: 110px;
+    background-position: 25px 20px;
+    background-size: 32px 38px;
   }
 
   &--food {
     background-image: url("../img/icon-burger.svg");
     height: 125px;
+    background-position: 19px 27px;
+    background-size: 38px 34px;
   }
 }
 
