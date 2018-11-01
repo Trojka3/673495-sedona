@@ -86,8 +86,31 @@
 @media (min-width: $tablet-width) {
   .radio {
     width: 378px;
+
+
   }
 
+  .radio__header {
+    width: 307px;
+    margin-right: 70px;
+  }
+
+  .radio__list {
+    padding-left: 77px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 1px;
+      height: 292px;
+      right: 54px;
+      top: 7px;
+      background-color: #e5e5e5;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
   .radio__header {
     width: 307px;
     margin-left: 70px;
@@ -95,5 +118,10 @@
 
   .radio__list {
     padding-left: 79px;
+
+    &::before {
+      right: -35px;
+      top: 6px;
+    }
   }
 }

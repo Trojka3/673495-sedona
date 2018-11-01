@@ -18,8 +18,29 @@
 
 .album__item {
   @include zero;
+  position: relative;
   margin-top: 23px;
   margin-bottom: 20px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 320px;
+    height: 1px;
+    left: -20px;
+    top: -23px;
+    background-color: #e5e5e5;
+    }
+}
+
+.album__item:last-child::after {
+  content: "";
+  position: absolute;
+  width: 320px;
+  height: 1px;
+  left: -20px;
+  bottom: -21px;
+  background-color: #e5e5e5;
 }
 
 .album__image {
@@ -80,6 +101,11 @@
     &:first-child {
       width: 648px;
     }
+  }
+
+  .album__item::before,
+  .album__item:last-child::after {
+    display: none;
   }
 
   .album__image {
