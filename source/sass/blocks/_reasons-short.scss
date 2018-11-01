@@ -98,6 +98,12 @@
     }
   }
 
+  .reasons-short__item:nth-child(2) {
+    .reasons-short__text {
+      width: 140px;
+    }
+  }
+
   .reasons-short__text {
     width: 150px;
     margin-top: 22px;
@@ -125,6 +131,12 @@
   .reasons-short__item:first-child {
     .reasons-short__text {
       width: 320px;
+    }
+  }
+
+  .reasons-short__item:nth-child(2) {
+    .reasons-short__text {
+      width: 270px;
     }
   }
 }

@@ -75,26 +75,39 @@
   }
 
   .advantages__item {
-    background-position: center 55px;
-    background-size: 75px 78px;
+    min-height: 330px;
 
     &:first-child {
       .advantages__text {
         width: 160px;
       }
     }
+
+    &--living {
+      background-position: center 59px;
+      background-size: 75px 73px;
+    }
+    &--souvenirs {
+      background-position: center 57px;
+    background-size: 64px 75px;
+    }
+    &--food {
+      background-position: center 62px;
+    background-size: 78px 69px;
+    }
   }
+
 
   .advantages__wrapper {
     width: 256px;
     padding-left: 0;
     align-items: center;
-    margin-top: 160px;
+    margin-top: 159px;
   }
 
   .advantages__header {
     margin-top: 0;
-    margin-bottom: 20px;
+    margin-bottom: 21px;
 
     @include header-t;
   }

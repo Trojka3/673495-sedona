@@ -84,8 +84,13 @@
 }
 
 @media (min-width: $tablet-width) {
+  .radio {
+    width: 378px;
+  }
+
   .radio__header {
-    margin-left: 70px;
+    width: 307px;
+    margin-right: 70px;
   }
 
   .radio__list {
